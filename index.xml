@@ -16,26 +16,27 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/about/</guid>
-      <description>A little introduction into my blog and a quick roundup what it’s about and what you can expect.</description>
-      <content><p>Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.</p>
-<h1 id="about-the-author">About the author</h1>
-<p>I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in. Most posts will be bilingual in both German and English. The information will always be the same, so just read in the language you prefer!</p>
-<h1 id="articles-at-devto">Articles at dev.to</h1>
-<p>Most of the English Articles can also be found and read on dev.to <a href="https://coming.soon">(here)</a>. I’m publishing those articles there as well, because it’s really the best way to share my posts with more people. Dev.to is at the same time a really awesome community centric project I want to contribute to.</p>
-<h1 id="dont-miss-new-articles">Don’t miss new articles</h1>
-<p>To always be on track with my blog there are many ways to accomplish that:</p>
-<ul>
-<li><a href="/contact/#rss-feeds">RSS feeds</a></li>
-<li><a href="https://twitter.com/staxthefox">Twitter</a></li>
-<li>Or just add my blog to your bookmarks or your home-screen</li>
-</ul>
-<h1 id="software-used-on-this-site">Software used on this site</h1>
-<ul>
-<li><a href="https://github.com/panr/hugo-theme-terminal">Hugo-theme-terminal</a></li>
-</ul>
-<p>I hope that my blog can help you to understand modern technology and programming a bit better and to make your developer-life at least a bit more uncomplicated. Thank you for reading!</p>
-<h4 id="happy-coding">Happy coding!</h4>
-</content>
+      <description>A little introduction into my blog and a quick roundup what it’s about and what you can expect.&lt;br&gt;Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.
+About the author I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in.</description>
+      <content:encoded>A little introduction into my blog and a quick roundup what it’s about and what you can expect.&lt;br&gt;&lt;p&gt;Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.&lt;/p&gt;
+&lt;h1 id=&#34;about-the-author&#34;&gt;About the author&lt;/h1&gt;
+&lt;p&gt;I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in. Most posts will be bilingual in both German and English. The information will always be the same, so just read in the language you prefer!&lt;/p&gt;
+&lt;h1 id=&#34;articles-at-devto&#34;&gt;Articles at dev.to&lt;/h1&gt;
+&lt;p&gt;Most of the English Articles can also be found and read on dev.to &lt;a href=&#34;https://coming.soon&#34;&gt;(here)&lt;/a&gt;. I’m publishing those articles there as well, because it’s really the best way to share my posts with more people. Dev.to is at the same time a really awesome community centric project I want to contribute to.&lt;/p&gt;
+&lt;h1 id=&#34;dont-miss-new-articles&#34;&gt;Don’t miss new articles&lt;/h1&gt;
+&lt;p&gt;To always be on track with my blog there are many ways to accomplish that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/contact/#rss-feeds&#34;&gt;RSS feeds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Or just add my blog to your bookmarks or your home-screen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;software-used-on-this-site&#34;&gt;Software used on this site&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal&#34;&gt;Hugo-theme-terminal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope that my blog can help you to understand modern technology and programming a bit better and to make your developer-life at least a bit more uncomplicated. Thank you for reading!&lt;/p&gt;
+&lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
+</content:encoded>
     </item>
     
     <item>
@@ -44,26 +45,29 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/contact/</guid>
-      <description>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.</description>
-      <content><p>OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:</p>
-<ul>
-<li><a href="https://twitter.com/staxthefox">Twitter</a></li>
-<li><a href="https://github.com/mcwertgaming">GitHub</a></li>
-<li><a href="https://coming.soon">dev.to</a></li>
-<li><a href="https://coming.soon">Mastodon</a></li>
-<li><a href="mailto:mcwertgaming@gmailcom?subject=OpenFoxBlog">E-Mail</a></li>
-</ul>
-<p>Please follow German right for legal inquiries. Please send me an e-mail.</p>
-<h1 id="rss-feeds">RSS feeds</h1>
-<ul>
-<li><a href="/index.xml">English articles</a></li>
-<li><a href="/de/index.xml">German articles</a></li>
-</ul>
-<p>All RSS feeds are always up to date and provide the full article, not just the beginning.</p>
-<h1 id="usage-of-articles-or-parts-of-this-blog">Usage of Articles or parts of this blog</h1>
-<p>Distributing and publishing Articles from this blog is not allowed without the Authors agreement! All code located inside the Articles are licensed under the terms of the <a href="https://opensource.org/licenses/MIT">MIT</a> license. Quoting or referencing on whole or part of Articles from this blog must be referenced with providing the source.</p>
-<h4 id="happy-coding">Happy coding!</h4>
-</content>
+      <description>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.&lt;br&gt;OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:
+ Twitter GitHub dev.to Mastodon E-Mail  Please follow German right for legal inquiries. Please send me an e-mail.
+RSS feeds  English articles German articles  All RSS feeds are always up to date and provide the full article, not just the beginning.
+Usage of Articles or parts of this blog Distributing and publishing Articles from this blog is not allowed without the Authors agreement!</description>
+      <content:encoded>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.&lt;br&gt;&lt;p&gt;OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcwertgaming&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://coming.soon&#34;&gt;dev.to&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://coming.soon&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mailto:mcwertgaming@gmailcom?subject=OpenFoxBlog&#34;&gt;E-Mail&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please follow German right for legal inquiries. Please send me an e-mail.&lt;/p&gt;
+&lt;h1 id=&#34;rss-feeds&#34;&gt;RSS feeds&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/index.xml&#34;&gt;English articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/de/index.xml&#34;&gt;German articles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All RSS feeds are always up to date and provide the full article, not just the beginning.&lt;/p&gt;
+&lt;h1 id=&#34;usage-of-articles-or-parts-of-this-blog&#34;&gt;Usage of Articles or parts of this blog&lt;/h1&gt;
+&lt;p&gt;Distributing and publishing Articles from this blog is not allowed without the Authors agreement! All code located inside the Articles are licensed under the terms of the &lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;MIT&lt;/a&gt; license. Quoting or referencing on whole or part of Articles from this blog must be referenced with providing the source.&lt;/p&gt;
+&lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
+</content:encoded>
     </item>
     
     <item>
@@ -72,17 +76,18 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/2020/introduction/</guid>
-      <description>This article will give an overview of how this blog came to be and what the topics are.</description>
-      <content><p>To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.</p>
-<h1 id="how-did-this-blog-come-about">How did this blog come about?</h1>
-<p>I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again. But at the same time, I found projects (especially libraries) which are not documented at all or hardly. These events and of course my enthusiasm for the open-source concept made me try to blog myself. In fact, this is not my first attempt to start a blog. The old version of the OpenFoxBlog was only in German and unfortunately only went as far as the third blog post. The reason for the failure was that I didn’t like the design that much and didn’t wanted to blog only in German (especially because in programming almost nothing is done in German). My thought at that time was first to revise the blog and then finally to continue. Unfortunately, I put it off for almost a year. One of the main reasons was that I used Jekyll as a static website generator. Jekyll is in itself a really good tool for blogging and benefits a lot from GitHub’s direct integration with GitHub Pages. The crucial problem, however, is that you have to do everything yourself. Sure, there are many plugins that do some things for you, but since my HTML knowledge is very limited and I don’t enjoy scripting in that language at all, I struggled a long time to make the blog bi-lingual. I even considered making two websites in parallel. In the end I just replaced Jekyll with Hugo. Hugo is also a static website generator, but this one has direct integrations for multilingual sites and takes a lot off your plate. A blog article about how I technically implemented my blog will be coming soon!</p>
-<h1 id="what-do-i-want-to-achieve-with-this-blog">What do I want to achieve with this blog?</h1>
-<p>Basically, I want to document my findings and achievements. However, I want to and will do this in the form of articles, so that everyone can easily and quickly apply and understand my findings. With this I want to bring programming and technology closer to you. Maybe even inspire one or the other for it and / or give a start in this abstract world. There are already too few programmers who are serious about programming. And thanks to big companies like RedHat, Microsoft and Canonical I see the open-source community in danger. I want to give something back to the open source, developer and geek community, but also to everyone else and make the (developer) life at least a little bit easier for all of you out there.</p>
-<h1 id="what-will-this-blog-be-about">What will this blog be about?</h1>
-<p>This blog will cover all kinds of topics. But basically, the focus will be on programming and technology. All that mixed with other, smaller topics, e.g. experiences from my life, or opinions about certain topics. Programming will focus on desktop development with C++. However, both programming in the console and as a graphical user interface. To be more precise, it will be mainly about game development.</p>
-<p>I hope this has given you a good overview of this blog and my plans for it. With that until the next article and stay healthy!</p>
-<h4 id="happy-coding">Happy coding!</h4>
-</content>
+      <description>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.
+How did this blog come about? I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again.</description>
+      <content:encoded>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;&lt;p&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.&lt;/p&gt;
+&lt;h1 id=&#34;how-did-this-blog-come-about&#34;&gt;How did this blog come about?&lt;/h1&gt;
+&lt;p&gt;I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again. But at the same time, I found projects (especially libraries) which are not documented at all or hardly. These events and of course my enthusiasm for the open-source concept made me try to blog myself. In fact, this is not my first attempt to start a blog. The old version of the OpenFoxBlog was only in German and unfortunately only went as far as the third blog post. The reason for the failure was that I didn’t like the design that much and didn’t wanted to blog only in German (especially because in programming almost nothing is done in German). My thought at that time was first to revise the blog and then finally to continue. Unfortunately, I put it off for almost a year. One of the main reasons was that I used Jekyll as a static website generator. Jekyll is in itself a really good tool for blogging and benefits a lot from GitHub’s direct integration with GitHub Pages. The crucial problem, however, is that you have to do everything yourself. Sure, there are many plugins that do some things for you, but since my HTML knowledge is very limited and I don’t enjoy scripting in that language at all, I struggled a long time to make the blog bi-lingual. I even considered making two websites in parallel. In the end I just replaced Jekyll with Hugo. Hugo is also a static website generator, but this one has direct integrations for multilingual sites and takes a lot off your plate. A blog article about how I technically implemented my blog will be coming soon!&lt;/p&gt;
+&lt;h1 id=&#34;what-do-i-want-to-achieve-with-this-blog&#34;&gt;What do I want to achieve with this blog?&lt;/h1&gt;
+&lt;p&gt;Basically, I want to document my findings and achievements. However, I want to and will do this in the form of articles, so that everyone can easily and quickly apply and understand my findings. With this I want to bring programming and technology closer to you. Maybe even inspire one or the other for it and / or give a start in this abstract world. There are already too few programmers who are serious about programming. And thanks to big companies like RedHat, Microsoft and Canonical I see the open-source community in danger. I want to give something back to the open source, developer and geek community, but also to everyone else and make the (developer) life at least a little bit easier for all of you out there.&lt;/p&gt;
+&lt;h1 id=&#34;what-will-this-blog-be-about&#34;&gt;What will this blog be about?&lt;/h1&gt;
+&lt;p&gt;This blog will cover all kinds of topics. But basically, the focus will be on programming and technology. All that mixed with other, smaller topics, e.g. experiences from my life, or opinions about certain topics. Programming will focus on desktop development with C++. However, both programming in the console and as a graphical user interface. To be more precise, it will be mainly about game development.&lt;/p&gt;
+&lt;p&gt;I hope this has given you a good overview of this blog and my plans for it. With that until the next article and stay healthy!&lt;/p&gt;
+&lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
+</content:encoded>
     </item>
     
   </channel>
