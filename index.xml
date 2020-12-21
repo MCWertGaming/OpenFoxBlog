@@ -16,8 +16,8 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/about/</guid>
-      <description>&lt;![CDATA[A little introduction into my blog and a quick roundup what it’s about and what you can expect.]]&gt;</description>
-      <content:encoded>&lt;![CDATA[<p>Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.</p>
+      <description>A little introduction into my blog and a quick roundup what it’s about and what you can expect.</description>
+      <content:encoded><p>Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.</p>
 <h1 id="about-the-author">About the author</h1>
 <p>I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in. Most posts will be bilingual in both German and English. The information will always be the same, so just read in the language you prefer!</p>
 <h1 id="articles-at-devto">Articles at dev.to</h1>
@@ -35,7 +35,7 @@
 </ul>
 <p>I hope that my blog can help you to understand modern technology and programming a bit better and to make your developer-life at least a bit more uncomplicated. Thank you for reading!</p>
 <h4 id="happy-coding">Happy coding!</h4>
-]]&gt;</content:encoded>
+</content:encoded>
     </item>
     
     <item>
@@ -44,8 +44,8 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/contact/</guid>
-      <description>&lt;![CDATA[A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.]]&gt;</description>
-      <content:encoded>&lt;![CDATA[<p>OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:</p>
+      <description>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.</description>
+      <content:encoded><p>OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:</p>
 <ul>
 <li><a href="https://twitter.com/staxthefox">Twitter</a></li>
 <li><a href="https://github.com/mcwertgaming">GitHub</a></li>
@@ -63,7 +63,7 @@
 <h1 id="usage-of-articles-or-parts-of-this-blog">Usage of Articles or parts of this blog</h1>
 <p>Distributing and publishing Articles from this blog is not allowed without the Authors agreement! All code located inside the Articles are licensed under the terms of the <a href="https://opensource.org/licenses/MIT">MIT</a> license. Quoting or referencing on whole or part of Articles from this blog must be referenced with providing the source.</p>
 <h4 id="happy-coding">Happy coding!</h4>
-]]&gt;</content:encoded>
+</content:encoded>
     </item>
     
     <item>
@@ -72,8 +72,8 @@
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/2020/introduction/</guid>
-      <description>&lt;![CDATA[This article will give an overview of how this blog came to be and what the topics are.]]&gt;</description>
-      <content:encoded>&lt;![CDATA[<p>To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.</p>
+      <description>This article will give an overview of how this blog came to be and what the topics are.</description>
+      <content:encoded><p>To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.</p>
 <h1 id="how-did-this-blog-come-about">How did this blog come about?</h1>
 <p>I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again. But at the same time, I found projects (especially libraries) which are not documented at all or hardly. These events and of course my enthusiasm for the open-source concept made me try to blog myself. In fact, this is not my first attempt to start a blog. The old version of the OpenFoxBlog was only in German and unfortunately only went as far as the third blog post. The reason for the failure was that I didn’t like the design that much and didn’t wanted to blog only in German (especially because in programming almost nothing is done in German). My thought at that time was first to revise the blog and then finally to continue. Unfortunately, I put it off for almost a year. One of the main reasons was that I used Jekyll as a static website generator. Jekyll is in itself a really good tool for blogging and benefits a lot from GitHub’s direct integration with GitHub Pages. The crucial problem, however, is that you have to do everything yourself. Sure, there are many plugins that do some things for you, but since my HTML knowledge is very limited and I don’t enjoy scripting in that language at all, I struggled a long time to make the blog bi-lingual. I even considered making two websites in parallel. In the end I just replaced Jekyll with Hugo. Hugo is also a static website generator, but this one has direct integrations for multilingual sites and takes a lot off your plate. A blog article about how I technically implemented my blog will be coming soon!</p>
 <h1 id="what-do-i-want-to-achieve-with-this-blog">What do I want to achieve with this blog?</h1>
@@ -82,7 +82,7 @@
 <p>This blog will cover all kinds of topics. But basically, the focus will be on programming and technology. All that mixed with other, smaller topics, e.g. experiences from my life, or opinions about certain topics. Programming will focus on desktop development with C++. However, both programming in the console and as a graphical user interface. To be more precise, it will be mainly about game development.</p>
 <p>I hope this has given you a good overview of this blog and my plans for it. With that until the next article and stay healthy!</p>
 <h4 id="happy-coding">Happy coding!</h4>
-]]&gt;</content:encoded>
+</content:encoded>
     </item>
     
   </channel>
