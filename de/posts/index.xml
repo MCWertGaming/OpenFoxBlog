@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on OpenFoxBlog</title>
-    <link>/de/posts/</link>
+    <link>https://mcwertgaming.github.io/de/posts/</link>
     <description>Recent content in Posts on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2020 Damon Leven</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/de/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Einführung</title>
-      <link>/de/2020/einf%C3%BChrung/</link>
+      <link>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/de/2020/einf%C3%BChrung/</guid>
+      <guid>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</guid>
       <description>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.
 Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen.</description>
       <content:encoded>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenFoxBlog</title>
-    <link>/</link>
+    <link>https://mcwertgaming.github.io/</link>
     <description>Recent content on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2020 Damon Leven</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>about</title>
-      <link>/about/</link>
+      <link>https://mcwertgaming.github.io/about/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/about/</guid>
+      <guid>https://mcwertgaming.github.io/about/</guid>
       <description>A little introduction into my blog and a quick roundup what it’s about and what you can expect.&lt;br&gt;Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.
 About the author I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in.</description>
       <content:encoded>A little introduction into my blog and a quick roundup what it’s about and what you can expect.&lt;br&gt;&lt;p&gt;Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.&lt;/p&gt;
@@ -26,7 +26,7 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
 &lt;h1 id=&#34;dont-miss-new-articles&#34;&gt;Don’t miss new articles&lt;/h1&gt;
 &lt;p&gt;To always be on track with my blog there are many ways to accomplish that:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/contact/#rss-feeds&#34;&gt;RSS feeds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/contact/#rss-feeds&#34;&gt;RSS feeds&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Or just add my blog to your bookmarks or your home-screen&lt;/li&gt;
 &lt;/ul&gt;
@@ -41,10 +41,10 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
     
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>https://mcwertgaming.github.io/contact/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/contact/</guid>
+      <guid>https://mcwertgaming.github.io/contact/</guid>
       <description>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.&lt;br&gt;OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:
  Twitter GitHub dev.to Mastodon E-Mail  Please follow German right for legal inquiries. Please send me an e-mail.
 RSS feeds  English articles German articles  All RSS feeds are always up to date and provide the full article, not just the beginning.
@@ -60,8 +60,8 @@ Usage of Articles or parts of this blog Distributing and publishing Articles fro
 &lt;p&gt;Please follow German right for legal inquiries. Please send me an e-mail.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS feeds&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/index.xml&#34;&gt;English articles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/de/index.xml&#34;&gt;German articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/index.xml&#34;&gt;English articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/index.xml&#34;&gt;German articles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;All RSS feeds are always up to date and provide the full article, not just the beginning.&lt;/p&gt;
 &lt;h1 id=&#34;usage-of-articles-or-parts-of-this-blog&#34;&gt;Usage of Articles or parts of this blog&lt;/h1&gt;
@@ -72,10 +72,10 @@ Usage of Articles or parts of this blog Distributing and publishing Articles fro
     
     <item>
       <title>Introduction</title>
-      <link>/2020/introduction/</link>
+      <link>https://mcwertgaming.github.io/2020/introduction/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/2020/introduction/</guid>
+      <guid>https://mcwertgaming.github.io/2020/introduction/</guid>
       <description>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.
 How did this blog come about? I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again.</description>
       <content:encoded>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;&lt;p&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.&lt;/p&gt;

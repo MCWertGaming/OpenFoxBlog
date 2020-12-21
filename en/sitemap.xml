@@ -3,89 +3,89 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://mcwertgaming.github.io/about/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://mcwertgaming.github.io/contact/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/2020/introduction/</loc>
+    <loc>https://mcwertgaming.github.io/2020/introduction/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
+    <loc>https://mcwertgaming.github.io/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/posts/"
+                href="https://mcwertgaming.github.io/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/posts/"
+                href="https://mcwertgaming.github.io/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://mcwertgaming.github.io/posts/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/categories/"
+                href="https://mcwertgaming.github.io/de/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://mcwertgaming.github.io/posts/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://mcwertgaming.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/tags/"
+                href="https://mcwertgaming.github.io/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://mcwertgaming.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mcwertgaming.github.io/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://mcwertgaming.github.io/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mcwertgaming.github.io/tags/"
                 />
   </url>
   

@@ -3,89 +3,89 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/de/2020/einf%C3%BChrung/</loc>
+    <loc>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/de/kontakt/</loc>
+    <loc>https://mcwertgaming.github.io/de/kontakt/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/de/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="/de/"
-                />
-  </url>
-  
-  <url>
-    <loc>/de/posts/</loc>
+    <loc>https://mcwertgaming.github.io/de/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/posts/"
+                href="https://mcwertgaming.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/posts/"
+                href="https://mcwertgaming.github.io/de/"
                 />
   </url>
   
   <url>
-    <loc>/de/%C3%BCber-mich/</loc>
+    <loc>https://mcwertgaming.github.io/de/posts/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mcwertgaming.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://mcwertgaming.github.io/de/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://mcwertgaming.github.io/de/%C3%BCber-mich/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/de/categories/</loc>
+    <loc>https://mcwertgaming.github.io/de/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://mcwertgaming.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/categories/"
+                href="https://mcwertgaming.github.io/de/categories/"
                 />
   </url>
   
   <url>
-    <loc>/de/tags/</loc>
+    <loc>https://mcwertgaming.github.io/de/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://mcwertgaming.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="/de/tags/"
+                href="https://mcwertgaming.github.io/de/tags/"
                 />
   </url>
   

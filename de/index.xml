@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenFoxBlog</title>
-    <link>/de/</link>
+    <link>https://mcwertgaming.github.io/de/</link>
     <description>Recent content on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2020 Damon Leven</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Einführung</title>
-      <link>/de/2020/einf%C3%BChrung/</link>
+      <link>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/de/2020/einf%C3%BChrung/</guid>
+      <guid>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</guid>
       <description>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.
 Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen.</description>
       <content:encoded>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;
@@ -32,10 +32,10 @@ Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einig
     
     <item>
       <title>Kontakt</title>
-      <link>/de/kontakt/</link>
+      <link>https://mcwertgaming.github.io/de/kontakt/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/de/kontakt/</guid>
+      <guid>https://mcwertgaming.github.io/de/kontakt/</guid>
       <description>Eine kurze Übersicht, auf welchen Sozial Media Kanälen man den Autor dieses Blogs finden kann und wie man ihn bei Fragen, Hinweisen und Beschwerden erreichen kann.&lt;br&gt;OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:
  Twitter GitHub dev.to Mastodon E-Mail  Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.
 RSS Feeds  Nur Deutsche Artikel Nur englische Artikel  Die RSS Feeds sind immer aktuell und beinhalten die vollen Artikel, statt nur den Anfang.
@@ -51,8 +51,8 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
 &lt;p&gt;Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS Feeds&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/de/index.xml&#34;&gt;Nur Deutsche Artikel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/index.xml&#34;&gt;Nur englische Artikel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/index.xml&#34;&gt;Nur Deutsche Artikel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/index.xml&#34;&gt;Nur englische Artikel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Die RSS Feeds sind immer aktuell und beinhalten die vollen Artikel, statt nur den Anfang.&lt;/p&gt;
 &lt;h1 id=&#34;verwendung-von-teilen-dieses-blogs&#34;&gt;Verwendung von teilen dieses Blogs&lt;/h1&gt;
@@ -63,10 +63,10 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
     
     <item>
       <title>Über mich</title>
-      <link>/de/%C3%BCber-mich/</link>
+      <link>https://mcwertgaming.github.io/de/%C3%BCber-mich/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/de/%C3%BCber-mich/</guid>
+      <guid>https://mcwertgaming.github.io/de/%C3%BCber-mich/</guid>
       <description>Eine kleine Erläuterung, um welche Themen es in diesem Blog geht und was der Autor mit ihm erreichen möchte.&lt;br&gt;Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.
 Über den Autor Ich bin Damon, manche kennen mich aber auch als Stax, ich bin beginnender C++ Programmierer und Linux bzw. Open Source Nutzer. Mit diesem Blog möchte meine Erfahrungen und Erkenntnisse in der Programmierung und in damit verbundenen Themen, wie Linux, Libraries und dergleichen dokumentieren und teilen.</description>
       <content:encoded>Eine kleine Erläuterung, um welche Themen es in diesem Blog geht und was der Autor mit ihm erreichen möchte.&lt;br&gt;&lt;p&gt;Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.&lt;/p&gt;
@@ -77,7 +77,7 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
 &lt;h1 id=&#34;keine-neuen-artikel-verpassen&#34;&gt;Keine neuen Artikel verpassen&lt;/h1&gt;
 &lt;p&gt;Um mit diesem Blog auf dem Laufenden zu bleiben gibt es einige Möglichkeiten:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/de/kontakt/#rss-feeds&#34;&gt;RSS Feeds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/kontakt/#rss-feeds&#34;&gt;RSS Feeds&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Oder füge meinen Blog einfach zu deinen Lesezeichen bzw. deinem Home-screen hinzu&lt;/li&gt;
 &lt;/ul&gt;

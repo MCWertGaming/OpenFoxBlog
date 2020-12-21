@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on OpenFoxBlog</title>
-    <link>/posts/</link>
+    <link>https://mcwertgaming.github.io/posts/</link>
     <description>Recent content in Posts on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2020 Damon Leven</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
-      <link>/2020/introduction/</link>
+      <link>https://mcwertgaming.github.io/2020/introduction/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>/2020/introduction/</guid>
+      <guid>https://mcwertgaming.github.io/2020/introduction/</guid>
       <description>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.
 How did this blog come about? I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again.</description>
       <content:encoded>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;&lt;p&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.&lt;/p&gt;
