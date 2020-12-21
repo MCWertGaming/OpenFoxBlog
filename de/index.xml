@@ -17,7 +17,7 @@
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/de/2020/einf%C3%BChrung/</guid>
       <description>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.</description>
-      <content:encoded><p>Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.</p>
+      <content><p>Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.</p>
 <h1 id="wie-kam-es-zu-diesem-blog">Wie kam es zu diesem Blog?</h1>
 <p>Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen. Gleichzeitig habe ich aber auch Projekte (vor allem Libraries) gefunden, welche gar nicht oder kaum Dokumentiert sind. Diese Ereignisse und natürlich auch einfach meine Begeisterung für das Open Source Konzept haben mich immer weiter dazu gebracht es wirklich mal zu versuchen selbst zu bloggen. Tatsächlich ist dies nicht mein erster Anlauf einen Blog zu starten. Die alte Version des OpenFoxBlogs war nur in Deutsch und ging leider auch nur bis zum dritten Blogpost. Grund für das Scheitern des Blogs war, dass ich mir das Design nicht gefallen hat und dass es mir nicht gefallen hat nur in Deutsch zu bloggen (vor allem, weil bei Programmierung fast nichts in Deutsch gemacht wird). Mein Gedanke damals war zuerst den Blog zu überarbeiten und dann schließlich weiter zu machen. Leider habe ich es dann fast ein Jahr vor mir hergeschoben. Ein entscheidender Grund dafür war z.B. auch, dass ich Jekyll als statistischen Website Generator benutzt habe. Jekyll ist an sich ein richtig gutes Tool für Blogging und profitiert sehr von GitHubs direkter Integration in GitHub Pages. Das entscheidende Problem ist aber leiser, dass man alles selber machen muss. Klar, es gibt viele Plugins, die einiges für dich machen, aber da meine HTML Kenntnisse sehr limitiert sind und mir HTML Scripting gar keinen Spaß macht, habe ich ewig damit gekämpft den Blog zwei sprachig zu gestalten. Ich habe sogar überlegt zwei Webseiten parallel zu machen. Am Ende habe ich Jekyll einfach gegen Hugo ausgetauscht. Hugo ist auch ein Statischer Website Generator, aber dieser hat direkt Integrationen für mehrsprachige Seiten und nimmt einem viel einfach ab. Einen Blogartikel darüber, wie ich meinen Blog Technisch umgesetzt habe wird bald kommen!</p>
 <h1 id="was-möchte-ich-mit-diesem-blog-erreichen">Was möchte ich mit diesem Blog erreichen?</h1>
@@ -26,7 +26,7 @@
 <p>Dieser Blog wird alle möglichen Themen behandeln. Grundlegend wird der Fokus aber in Richtung Programmierung und Technologie gehen. Das alles gemischt mit weiteren, kleineren Themen, z.B. Erfahrungen aus meinem Leben, oder Meinungen zu bestimmten Themen. Bei Programmierung wird der Fokus auf Desktopentwicklung mit C++ sein. Dabei allerdings sowohl Programmierung in der Konsole und als grafische Benutzeroberfläche. Um genau zu sein, wird es vor allem um Spieleentwicklung gehen.</p>
 <p>Ich hoffe, dass ich hiermit einen guten Überblick über diesen Blog und meine Pläne für ihn erläutern konnte.</p>
 <h4 id="frohes-programmieren">Frohes Programmieren!</h4>
-</content:encoded>
+</content>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/de/kontakt/</guid>
       <description>Eine kurze Übersicht, auf welchen Sozial Media Kanälen man den Autor dieses Blogs finden kann und wie man ihn bei Fragen, Hinweisen und Beschwerden erreichen kann.</description>
-      <content:encoded><p>OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:</p>
+      <content><p>OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:</p>
 <ul>
 <li><a href="https://twitter.com/staxthefox">Twitter</a></li>
 <li><a href="https://github.com/mcwertgaming">GitHub</a></li>
@@ -54,7 +54,7 @@
 <h1 id="verwendung-von-teilen-dieses-blogs">Verwendung von teilen dieses Blogs</h1>
 <p>Vervielfältigen und veröffentlichen der hier veröffentlichten Artikel ohne das Einverständnis des Autors ist nicht erlaubt! Jeglicher code in den Artikeln ist unter den Bedingungen der <a href="https://opensource.org/licenses/MIT">MIT</a> Lizenz zu behandeln. Verweisen auf einen ganzen, oder Teile eines hier veröffentlichten Artikels ist mit Quellen zum originalen Artikel zu versehen.</p>
 <h4 id="frohes-programmieren">Frohes Programmieren!</h4>
-</content:encoded>
+</content>
     </item>
     
     <item>
@@ -64,7 +64,7 @@
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>/de/%C3%BCber-mich/</guid>
       <description>Eine kleine Erläuterung, um welche Themen es in diesem Blog geht und was der Autor mit ihm erreichen möchte.</description>
-      <content:encoded><p>Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.</p>
+      <content><p>Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.</p>
 <h1 id="über-den-autor">Über den Autor</h1>
 <p>Ich bin Damon, manche kennen mich aber auch als Stax, ich bin beginnender C++ Programmierer und Linux bzw. Open Source Nutzer. Mit diesem Blog möchte meine Erfahrungen und Erkenntnisse in der Programmierung und in damit verbundenen Themen, wie Linux, Libraries und dergleichen dokumentieren und teilen. Die meisten Artikel werden zweisprachig verfügbar sein und können daher in Deutsch und englisch gelesen werden. Inhaltlich sind beide Versionen immer identisch.</p>
 <h1 id="artikel-bei-devto">Artikel bei dev.to</h1>
@@ -82,7 +82,7 @@
 </ul>
 <p>Ich hoffe, dass ich euch mit diesem Blog moderne Technologie und Programmierung näherbringen kann und euer Developer-Leben etwas vereinfache. Danke für das Lesen!</p>
 <h4 id="frohes-programmieren">Frohes Programmieren!</h4>
-</content:encoded>
+</content>
     </item>
     
   </channel>
