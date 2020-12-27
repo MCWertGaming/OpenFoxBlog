@@ -3,22 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mcwertgaming.github.io/de/kontakt/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <loc>https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://mcwertgaming.github.io/de/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -35,7 +28,7 @@
   
   <url>
     <loc>https://mcwertgaming.github.io/de/posts/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -48,6 +41,20 @@
                 hreflang="de"
                 href="https://mcwertgaming.github.io/de/posts/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcwertgaming.github.io/de/kontakt/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

@@ -9,7 +9,83 @@
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2020 Damon Leven</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A look behind the scenes</title>
+      <link>https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      <author>mcwertgaming@gmail.com (Damon Leven)</author>
+      <guid>https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/</guid>
+      <description>This post gives a quick overview about the technical behind the scenes of OpenFoxBlog, as well as why I have chosen the tools I&#39;m using.&lt;br&gt;In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.
+English version
+How was this blog setup? I already talked in an earlier post, that I&amp;rsquo;m using Hugo as static website generator.</description>
+      <content:encoded>This post gives a quick overview about the technical behind the scenes of OpenFoxBlog, as well as why I have chosen the tools I&#39;m using.&lt;br&gt;&lt;p&gt;In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2FA-look-behind-the-scenes&#34; alt=&#34;Hits&#34;&gt;
+&lt;a href=&#34;https://mcwertgaming.github.io/2020/Ein-Blick-hinter-die-Kullissen&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;how-was-this-blog-setup&#34;&gt;How was this blog setup?&lt;/h1&gt;
+&lt;p&gt;I already talked &lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction/&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
+&lt;h1 id=&#34;why-not-just-medium-or-wordpress&#34;&gt;Why not just medium or Wordpress?&lt;/h1&gt;
+&lt;p&gt;First of all, I have a big problem with WordPress. Written in old PHP and lacking on proper security with a lot of problems and downsides. At the same time, I would have to buy or host a webserver to serve my site which would cost me money (even though, there are some free ones available I think). Because WordPress Isn&amp;rsquo;t an option I would go with, there is only medium left. I haven&amp;rsquo;t tried medium myself, but I read multiple times now, that people are criticizing on how medium tries to monetize their blog and posts. I really dislike that, because I want everyone to be able to read my blog without paying for it or having to look at dumb ads. Not to forget the tracking on free sites. In the end I chose to create my blog with Hugo and host it for free on GitHub. I want to get my thought onto the screen, not money into my pocket.&lt;/p&gt;
+&lt;h1 id=&#34;what-is-a-static-website-generator&#34;&gt;What is a static website generator?&lt;/h1&gt;
+&lt;p&gt;before I get into the question, I quickly want to give a little insight into how my blog comes onto your screen. This blog is located on GitHub inside a &lt;a href=&#34;https://github.com/MCWertGaming/mcwertgaming.github.io&#34;&gt;public repository&lt;/a&gt; and gets automatically generated on every commit. This generation is done by the static website generator. You simply provide a theme to the generator as well as your posts in form of html or markdown pages and it will put the contents of your posts into the theme. The cool thing about this method is that the theme and in the end the design of every page will be exactly the same and you don&amp;rsquo;t have to manually create templates to edit for your posts. At the same time, you can just roll out a new theme or edit it without the need of updating every page manually. The generator can even generate RSS feeds and homepages with your latest posts on it after a before defines template (even though, WordPress and similar software can do that as well).
+But my personal favorite is the ability to just write you blog-posts in pure markdown. Markdown is a well-known and wide spread text formatting system and it provides the same options for formatting as html but with more user-friendly syntax. To visualize this quickly, here is an example:&lt;/p&gt;
+&lt;p&gt;The rendered version:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h1 id=&#34;a-test&#34;&gt;A test&lt;/h1&gt;
+&lt;p&gt;This is a small test for the differences of markdown / html.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;first part of a list&lt;/li&gt;
+&lt;li&gt;second part of a list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;smaller-heading&#34;&gt;smaller Heading&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;A link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;A picture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Emphasized&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The markdown code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;# A test
+This is a small test for the differences of markdown / html.
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; first part of a list
+&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; second part of a list
+&lt;span style=&#34;color:#75715e&#34;&gt;## smaller Heading
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+[&lt;span style=&#34;color:#f92672&#34;&gt;A link&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/&lt;/span&gt;)
+
+![&lt;span style=&#34;color:#f92672&#34;&gt;A picture&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/img/free-images/panorama.svg&lt;/span&gt;)
+
+&lt;span style=&#34;font-weight:bold&#34;&gt;**Bold**&lt;/span&gt;
+
+&lt;span style=&#34;font-style:italic&#34;&gt;*Emphasized*&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;~~Strikethrough~~&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same in html:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a-test&amp;#34;&lt;/span&gt;&amp;gt;A test&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;This is a small test for the differences of markdown / html.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;first part of a list&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;second part of a list&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;smaller-heading&amp;#34;&lt;/span&gt;&amp;gt;smaller Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&amp;gt;A link&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/img/free-images/panorama.svg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A picture&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;Bold&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;Emphasized&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;Strikethrough&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can clearly see, that markdown&amp;rsquo;s syntax is a lot easier to write as well as a lot cleaner than the same in actual html. At the other hand, I really don&amp;rsquo;t like web development and would like to avoid that at least a bit so I&amp;rsquo;m even more happy about this feature.&lt;/p&gt;
+&lt;h1 id=&#34;but-why-hugo&#34;&gt;But why Hugo?&lt;/h1&gt;
+&lt;p&gt;I have already noted in my last post that I have used Jekyll on the old version of this blog but I experienced some problems and difficulties that would have cost me a lot of time. The first version of this blog was German only but I wanted to make this blog multilingual. As Jekyll don&amp;rsquo;t supports using two languages well and at the same time, I didn&amp;rsquo;t find a good theme with two languages already build in, I tried Hugo. Sure, Hugo does not offer a plugin system, but at least it has features for adding a second language built in. It also handles themes a lot better than Jekyll making it extremely easy to add themes and even update them without the need of migrating the whole site. One last thing, that made me switch, was that I found the theme I&amp;rsquo;m currently using immediately. I like It a lot more than all other themes, even on Jekyll I found.&lt;/p&gt;
+&lt;h1 id=&#34;problems-with-hugo&#34;&gt;Problems with Hugo&lt;/h1&gt;
+&lt;p&gt;Like at probably most things at programming Hugo created some problems. The first thing I encountered with was the way Hugo creates web files. Instead of creating normal html files with the site name it creates folders with the site name and places an index.html inside that. At first this is a bit weird (at least it was for me!) but makes sense in the end. Because of that the browser hides the URL has no .html extension and makes the URL look a bit cleaner.
+All other things went without problems at all. I could just create all required sites with their content and Hugo did everything other for me.
+At the end there was actually one a bit bigger problem. The default RSS feed configuration didn&amp;rsquo;t suite my needs. It just includes the first paragraph inside the feed instead of just providing the full post. After changing that, the markdown converter of Hugo included illegal character inside of the xml file and made it corrupt. I will make a dedicated post on how I fixed that real soon. stay tuned!&lt;/p&gt;
+&lt;p&gt;Thats for today&amp;rsquo;s post. I hope you enjoyed this little behind the scenes and with you some happy last Christmas days as well as a great new year!&lt;/p&gt;
+&lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content:encoded>
+    </item>
+    
     <item>
       <title>Introduction</title>
       <link>https://mcwertgaming.github.io/2020/introduction/</link>
@@ -30,6 +106,7 @@ How did this blog come about? I had the idea for this blog some time ago. When I
 &lt;p&gt;This blog will cover all kinds of topics. But basically, the focus will be on programming and technology. All that mixed with other, smaller topics, e.g. experiences from my life, or opinions about certain topics. Programming will focus on desktop development with C++. However, both programming in the console and as a graphical user interface. To be more precise, it will be mainly about game development.&lt;/p&gt;
 &lt;p&gt;I hope this has given you a good overview of this blog and my plans for it. With that until the next article and stay healthy!&lt;/p&gt;
 &lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
     </item>
     
