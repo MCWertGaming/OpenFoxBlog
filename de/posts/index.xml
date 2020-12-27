@@ -20,10 +20,10 @@
 English version
 Wie wurde dieser Blog erstellt? Wie ich bereits in meinem vorherigen Post beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?</description>
       <content:encoded>Dieser Post gibt eine kleine Übersicht, wie der OpenFoxBlog aufgebaut wurde und warum man sich für die jeweiligen Tools bzw. wegen entschieden hat.&lt;br&gt;&lt;p&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2FEin-Blick-hinter-die-Kullissen%2F&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/2020/A-look-behind-the-scenes&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2Fein-blick-hinter-die-kulissen%2F&#34; alt=&#34;Hits&#34;&gt;
+&lt;a href=&#34;https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-wurde-dieser-blog-erstellt&#34;&gt;Wie wurde dieser Blog erstellt?&lt;/h1&gt;
-&lt;p&gt;Wie ich bereits &lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
+&lt;p&gt;Wie ich bereits &lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/#wie-kam-es-zu-diesem-blog&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;warum-nicht-einfach-medium-oder-wordpress&#34;&gt;Warum nicht einfach medium oder WordPress?&lt;/h1&gt;
 &lt;p&gt;Zunächst muss ich sagen, dass ich eine generelle Abneigung gegenüber WordPress habe. Geschrieben in altem PHP und durchlöchert mit vielen Problemen und Sicherheitsrisiken. Dazu kommt leider auch noch, dass ein Web Server Geld kostet und ich würde die Webseite ungern von zu Hause hosten, weil Web Server immer die ersten Ziele von automatischen Angriffen im Internet sind. Da WordPress damit aus meiner Entscheidung ausfällt, bleibt noch medium. Medium ist quasi eine Webseite, auf der man seine Blog Artikel einfach veröffentlichen kann. Da es hier nicht um ein generelles Thema geht, ist das tatsächlich sogar eine denkbare Alternative für mich. Allerdings habe ich mittlerweile viel Kritik an medium und daran, dass sie wohl aktiv versuchen die Artikel ihrer User aktiv zu monetarisieren. Ich möchte kein Geld mit meinen Artikeln machen und möchte auch, dass sie jeder kostenlos und ohne Werbung oder ähnlichen lesen kann. Ich möchte meine Gedanken auf den Bildschirm bringen und nicht Geld in meinen Geldbeutel.&lt;/p&gt;
 &lt;h1 id=&#34;was-ist-ein-statischer-website-generator&#34;&gt;Was ist ein Statischer Website Generator?&lt;/h1&gt;
@@ -40,7 +40,7 @@ Aber mein Lieblings Feature ist, dass ich die Artikel einfach in markdown schrei
 &lt;h2 id=&#34;kleinere-überschrift&#34;&gt;Kleinere Überschrift&lt;/h2&gt;
 &lt;p&gt;Ein weiterer Test.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;Ein Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;Ein Bild&#34;&gt;&lt;/p&gt;
+&lt;p&gt;![Ein Bild](/img/free-images/panorama.svg =10x10)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fett&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Kursiv&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Durch gestrichen&lt;/del&gt;&lt;/p&gt;
@@ -86,7 +86,7 @@ Sonst lief alles super. Das Erstellen von neuen Seiten geht einfach so und auch 
 Zum Schluss gab es allerdings dann doch noch ein großes Problem. Die RSS Feed Integration ist für meinen Anwendungsfall sehr schlecht gemacht. Er wird automatisch erstellt, sogar für alle Sprachen, aber nur einer von beiden wird als html tag in die Seite hinzugefügt (damit man die RSS Feeds einfach mit einem Feed Reader finden kann). Dazu kam, dass nur der erste Absatz in die RSS Feeds hinzugefügt wurde. Nach dem Ändern ging allerdings der RSS nicht mehr, weil das konvertieren von markdown zu html den RSS Feed ungültig gemacht hat. Wie ich dieses Problem gelöst habe, werde ich in einem kommenden Post genauerer erklären.&lt;/p&gt;
 &lt;p&gt;Das war es für den heutigen Artikel, ich hoffe, dass ich einen kleinen Einblick hinter die Kulissen dieses Blogs geben konnte und wünsche euch noch ein paar Rest Weihnachtsstimmung und einen guten Rutsch ins neue Jahr!&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
-&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/about/#software-used-on-this-site&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
+&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
 </content:encoded>
     </item>
     
@@ -110,7 +110,7 @@ Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einig
 &lt;p&gt;Dieser Blog wird alle möglichen Themen behandeln. Grundlegend wird der Fokus aber in Richtung Programmierung und Technologie gehen. Das alles gemischt mit weiteren, kleineren Themen, z.B. Erfahrungen aus meinem Leben, oder Meinungen zu bestimmten Themen. Bei Programmierung wird der Fokus auf Desktopentwicklung mit C++ sein. Dabei allerdings sowohl Programmierung in der Konsole und als grafische Benutzeroberfläche. Um genau zu sein, wird es vor allem um Spieleentwicklung gehen.&lt;/p&gt;
 &lt;p&gt;Ich hoffe, dass ich hiermit einen guten Überblick über diesen Blog und meine Pläne für ihn erläutern konnte.&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
-&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/about/#software-used-on-this-site&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
+&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
 </content:encoded>
     </item>
     

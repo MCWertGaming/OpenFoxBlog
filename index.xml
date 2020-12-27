@@ -20,10 +20,10 @@
 English version
 How was this blog setup? I already talked in an earlier post, that I&amp;rsquo;m using Hugo as static website generator.</description>
       <content:encoded>This post gives a quick overview about the technical behind the scenes of OpenFoxBlog, as well as why I have chosen the tools I&#39;m using.&lt;br&gt;&lt;p&gt;In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2FA-look-behind-the-scenes&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/2020/Ein-Blick-hinter-die-Kullissen&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2F2020%2Fa-look-behind-the-scenes%2F&#34; alt=&#34;Hits&#34;&gt;
+&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-was-this-blog-setup&#34;&gt;How was this blog setup?&lt;/h1&gt;
-&lt;p&gt;I already talked &lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction/&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
+&lt;p&gt;I already talked &lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction/#how-did-this-blog-come-about&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;why-not-just-medium-or-wordpress&#34;&gt;Why not just medium or Wordpress?&lt;/h1&gt;
 &lt;p&gt;First of all, I have a big problem with WordPress. Written in old PHP and lacking on proper security with a lot of problems and downsides. At the same time, I would have to buy or host a webserver to serve my site which would cost me money (even though, there are some free ones available I think). Because WordPress Isn&amp;rsquo;t an option I would go with, there is only medium left. I haven&amp;rsquo;t tried medium myself, but I read multiple times now, that people are criticizing on how medium tries to monetize their blog and posts. I really dislike that, because I want everyone to be able to read my blog without paying for it or having to look at dumb ads. Not to forget the tracking on free sites. In the end I chose to create my blog with Hugo and host it for free on GitHub. I want to get my thought onto the screen, not money into my pocket.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-a-static-website-generator&#34;&gt;What is a static website generator?&lt;/h1&gt;
@@ -39,7 +39,7 @@ But my personal favorite is the ability to just write you blog-posts in pure mar
 &lt;/ul&gt;
 &lt;h2 id=&#34;smaller-heading&#34;&gt;smaller Heading&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;A link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;A picture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;![A picture](/img/free-images/panorama.svg =10x10)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Emphasized&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
