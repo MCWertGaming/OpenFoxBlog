@@ -40,7 +40,7 @@ Aber mein Lieblings Feature ist, dass ich die Artikel einfach in markdown schrei
 &lt;h2 id=&#34;kleinere-überschrift&#34;&gt;Kleinere Überschrift&lt;/h2&gt;
 &lt;p&gt;Ein weiterer Test.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;Ein Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;![Ein Bild](/img/free-images/panorama.svg =10x10)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;Ein Bild&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fett&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Kursiv&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Durch gestrichen&lt;/del&gt;&lt;/p&gt;
