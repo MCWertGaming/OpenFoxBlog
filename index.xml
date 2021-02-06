@@ -20,8 +20,7 @@
 English version
 How was this blog setup? I already talked in an earlier post, that I&amp;rsquo;m using Hugo as static website generator.</description>
       <content:encoded>This post gives a quick overview about the technical behind the scenes of OpenFoxBlog, as well as why I have chosen the tools I&#39;m using.&lt;br&gt;&lt;p&gt;In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2F2020%2Fa-look-behind-the-scenes%2F&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-was-this-blog-setup&#34;&gt;How was this blog setup?&lt;/h1&gt;
 &lt;p&gt;I already talked &lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction/#how-did-this-blog-come-about&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;why-not-just-medium-or-wordpress&#34;&gt;Why not just medium or Wordpress?&lt;/h1&gt;
@@ -98,12 +97,13 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
 &lt;h1 id=&#34;about-the-author&#34;&gt;About the author&lt;/h1&gt;
 &lt;p&gt;I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in. Most posts will be bilingual in both German and English. The information will always be the same, so just read in the language you prefer!&lt;/p&gt;
 &lt;h1 id=&#34;articles-at-devto&#34;&gt;Articles at dev.to&lt;/h1&gt;
-&lt;p&gt;Most of the English Articles can also be found and read on dev.to &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;(here)&lt;/a&gt;. I’m publishing those articles there as well, because it’s really the best way to share my posts with more people. Dev.to is at the same time a really awesome community centric project I want to contribute to.&lt;/p&gt;
+&lt;p&gt;Most of the English Articles can also be found and read &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;on dev.to&lt;/a&gt;. I’m publishing most articles there as well, because it’s a good way to share my posts with more people. Dev.to is at the same time a really awesome community centric project I want to contribute to.&lt;/p&gt;
 &lt;h1 id=&#34;dont-miss-new-articles&#34;&gt;Don’t miss new articles&lt;/h1&gt;
 &lt;p&gt;To always be on track with my blog there are many ways to accomplish that:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/contact/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/contact/#rss-feeds&#34;&gt;RSS feeds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Or just add my blog to your bookmarks or your home-screen&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;software-used-on-this-site&#34;&gt;Software used on this site&lt;/h1&gt;
@@ -124,17 +124,18 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>https://mcwertgaming.github.io/contact/</guid>
       <description>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.&lt;br&gt;OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:
- Twitter GitHub dev.to Mastodon E-Mail  Please follow German right for legal inquiries. Please send me an e-mail.
+
+
+
+
+Please follow German right for legal inquiries. Please send me an e-mail.
 RSS feeds  English articles German articles  All RSS feeds are always up to date and provide the full article, not just the beginning.
 Usage of Articles or parts of this blog Distributing and publishing Articles from this blog is not allowed without the Authors agreement!</description>
       <content:encoded>A quick overview about the authors social media and how one could contact him for different reasons, like questions, references or complains.&lt;br&gt;&lt;p&gt;OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcwertgaming&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;dev.to&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://coming.soon&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;mailto:mcwertgaming@gmailcom?subject=OpenFoxBlog&#34;&gt;E-Mail&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;amp;logo=github&amp;amp;logoColor=white&#34; alt=&#34;GitHub&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:dleven@protonmail.com?subject=OpenFoxBlog&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&amp;amp;logo=protonmail&amp;amp;logoColor=white&#34; alt=&#34;Protonmail&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Please follow German right for legal inquiries. Please send me an e-mail.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS feeds&lt;/h1&gt;
 &lt;ul&gt;
@@ -159,8 +160,7 @@ Usage of Articles or parts of this blog Distributing and publishing Articles fro
 German version
 How did this blog come about? I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again.</description>
       <content:encoded>This article will give an overview of how this blog came to be and what the topics are.&lt;br&gt;&lt;p&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2F2020%2Fintroduction%2F&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-did-this-blog-come-about&#34;&gt;How did this blog come about?&lt;/h1&gt;
 &lt;p&gt;I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again. But at the same time, I found projects (especially libraries) which are not documented at all or hardly. These events and of course my enthusiasm for the open-source concept made me try to blog myself. In fact, this is not my first attempt to start a blog. The old version of the OpenFoxBlog was only in German and unfortunately only went as far as the third blog post. The reason for the failure was that I didn’t like the design that much and didn’t wanted to blog only in German (especially because in programming almost nothing is done in German). My thought at that time was first to revise the blog and then finally to continue. Unfortunately, I put it off for almost a year. One of the main reasons was that I used Jekyll as a static website generator. Jekyll is in itself a really good tool for blogging and benefits a lot from GitHub’s direct integration with GitHub Pages. The crucial problem, however, is that you have to do everything yourself. Sure, there are many plugins that do some things for you, but since my HTML knowledge is very limited and I don’t enjoy scripting in that language at all, I struggled a long time to make the blog bi-lingual. I even considered making two websites in parallel. In the end I just replaced Jekyll with Hugo. Hugo is also a static website generator, but this one has direct integrations for multilingual sites and takes a lot off your plate. A blog article about how I technically implemented my blog will be coming soon!&lt;/p&gt;
 &lt;h1 id=&#34;what-do-i-want-to-achieve-with-this-blog&#34;&gt;What do I want to achieve with this blog?&lt;/h1&gt;

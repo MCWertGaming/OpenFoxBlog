@@ -20,8 +20,7 @@
 English version
 Wie wurde dieser Blog erstellt? Wie ich bereits in meinem vorherigen Post beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?</description>
       <content:encoded>Dieser Post gibt eine kleine Übersicht, wie der OpenFoxBlog aufgebaut wurde und warum man sich für die jeweiligen Tools bzw. wegen entschieden hat.&lt;br&gt;&lt;p&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2Fein-blick-hinter-die-kulissen%2F&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-wurde-dieser-blog-erstellt&#34;&gt;Wie wurde dieser Blog erstellt?&lt;/h1&gt;
 &lt;p&gt;Wie ich bereits &lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/#wie-kam-es-zu-diesem-blog&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;warum-nicht-einfach-medium-oder-wordpress&#34;&gt;Warum nicht einfach medium oder WordPress?&lt;/h1&gt;
@@ -100,8 +99,7 @@ Zum Schluss gab es allerdings dann doch noch ein großes Problem. Die RSS Feed I
 English version
 Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen.</description>
       <content:encoded>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fmcwertgaming.github.io%2Fde%2F2020%2Feinf%25C3%25BChrung%2F&#34; alt=&#34;Hits&#34;&gt;
-&lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-kam-es-zu-diesem-blog&#34;&gt;Wie kam es zu diesem Blog?&lt;/h1&gt;
 &lt;p&gt;Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen. Gleichzeitig habe ich aber auch Projekte (vor allem Libraries) gefunden, welche gar nicht oder kaum Dokumentiert sind. Diese Ereignisse und natürlich auch einfach meine Begeisterung für das Open Source Konzept haben mich immer weiter dazu gebracht es wirklich mal zu versuchen selbst zu bloggen. Tatsächlich ist dies nicht mein erster Anlauf einen Blog zu starten. Die alte Version des OpenFoxBlogs war nur in Deutsch und ging leider auch nur bis zum dritten Blogpost. Grund für das Scheitern des Blogs war, dass ich mir das Design nicht gefallen hat und dass es mir nicht gefallen hat nur in Deutsch zu bloggen (vor allem, weil bei Programmierung fast nichts in Deutsch gemacht wird). Mein Gedanke damals war zuerst den Blog zu überarbeiten und dann schließlich weiter zu machen. Leider habe ich es dann fast ein Jahr vor mir hergeschoben. Ein entscheidender Grund dafür war z.B. auch, dass ich Jekyll als statistischen Website Generator benutzt habe. Jekyll ist an sich ein richtig gutes Tool für Blogging und profitiert sehr von GitHubs direkter Integration in GitHub Pages. Das entscheidende Problem ist aber leiser, dass man alles selber machen muss. Klar, es gibt viele Plugins, die einiges für dich machen, aber da meine HTML Kenntnisse sehr limitiert sind und mir HTML Scripting gar keinen Spaß macht, habe ich ewig damit gekämpft den Blog zwei sprachig zu gestalten. Ich habe sogar überlegt zwei Webseiten parallel zu machen. Am Ende habe ich Jekyll einfach gegen Hugo ausgetauscht. Hugo ist auch ein Statischer Website Generator, aber dieser hat direkt Integrationen für mehrsprachige Seiten und nimmt einem viel einfach ab. Einen Blogartikel darüber, wie ich meinen Blog Technisch umgesetzt habe wird bald kommen!&lt;/p&gt;
 &lt;h1 id=&#34;was-möchte-ich-mit-diesem-blog-erreichen&#34;&gt;Was möchte ich mit diesem Blog erreichen?&lt;/h1&gt;
@@ -121,17 +119,18 @@ Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einig
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>https://mcwertgaming.github.io/de/kontakt/</guid>
       <description>Eine kurze Übersicht, auf welchen Sozial Media Kanälen man den Autor dieses Blogs finden kann und wie man ihn bei Fragen, Hinweisen und Beschwerden erreichen kann.&lt;br&gt;OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:
- Twitter GitHub dev.to Mastodon E-Mail  Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.
+
+
+
+
+Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.
 RSS Feeds  Nur Deutsche Artikel Nur englische Artikel  Die RSS Feeds sind immer aktuell und beinhalten die vollen Artikel, statt nur den Anfang.
 Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hier veröffentlichten Artikel ohne das Einverständnis des Autors ist nicht erlaubt!</description>
       <content:encoded>Eine kurze Übersicht, auf welchen Sozial Media Kanälen man den Autor dieses Blogs finden kann und wie man ihn bei Fragen, Hinweisen und Beschwerden erreichen kann.&lt;br&gt;&lt;p&gt;OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcwertgaming&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;dev.to&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://coming.soon&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;mailto:mcwertgaming@gmailcom?subject=OpenFoxBlog&#34;&gt;E-Mail&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;amp;logo=github&amp;amp;logoColor=white&#34; alt=&#34;GitHub&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:dleven@protonmail.com?subject=OpenFoxBlog&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&amp;amp;logo=protonmail&amp;amp;logoColor=white&#34; alt=&#34;Protonmail&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS Feeds&lt;/h1&gt;
 &lt;ul&gt;
@@ -158,15 +157,14 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
 &lt;h1 id=&#34;über-den-autor&#34;&gt;Über den Autor&lt;/h1&gt;
 &lt;p&gt;Ich bin Damon, manche kennen mich aber auch als Stax, ich bin beginnender C++ Programmierer und Linux bzw. Open Source Nutzer. Mit diesem Blog möchte meine Erfahrungen und Erkenntnisse in der Programmierung und in damit verbundenen Themen, wie Linux, Libraries und dergleichen dokumentieren und teilen. Die meisten Artikel werden zweisprachig verfügbar sein und können daher in Deutsch und englisch gelesen werden. Inhaltlich sind beide Versionen immer identisch.&lt;/p&gt;
 &lt;h1 id=&#34;artikel-bei-devto&#34;&gt;Artikel bei dev.to&lt;/h1&gt;
-&lt;p&gt;Viele der englischen Artikel Könen zusätzlich nicht nur auf meinem Blog. Sondern auch &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;hier&lt;/a&gt; bei dev.to gelesen werden. Das mache ich, um mehr Leute mit meinen Artikeln zu erreichen und mich mit mehr Leuten bei diesem Thema zu verbinden.&lt;/p&gt;
+&lt;p&gt;Viele der englischen Artikel Könen zusätzlich nicht nur auf meinem Blog, &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;sondern auch bei dev.to gelesen werden&lt;/a&gt;. Das mache ich, um mehr Leute mit meinen Artikeln zu erreichen und mich mit mehr Leuten bei diesem Thema zu verbinden.&lt;/p&gt;
 &lt;h1 id=&#34;keine-neuen-artikel-verpassen&#34;&gt;Keine neuen Artikel verpassen&lt;/h1&gt;
 &lt;p&gt;Um mit diesem Blog auf dem Laufenden zu bleiben gibt es einige Möglichkeiten:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/kontakt/#rss-feeds&#34;&gt;RSS Feeds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Oder füge meinen Blog einfach zu deinen Lesezeichen bzw. deinem Home-screen hinzu&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;in-dieser-seite-verwendete-software&#34;&gt;In dieser Seite verwendete Software&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/kontakt/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oder füge meinen Blog einfach zu deinen Lesezeichen bzw. deinem Home-screen hinzu&lt;/p&gt;
+&lt;h1 id=&#34;auf-dieser-seite-verwendete-software&#34;&gt;Auf dieser Seite verwendete Software&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/panr/hugo-theme-terminal&#34;&gt;Hugo-theme-terminal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.flaticon.com/authors/freepik&#34;&gt;/img/free-images/panorama.svg&lt;/a&gt;&lt;/li&gt;
