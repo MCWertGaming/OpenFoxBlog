@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on OpenFoxBlog</title>
     <link>https://mcwertgaming.github.io/de/posts/</link>
@@ -16,10 +16,10 @@
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/</guid>
-      <description>Dieser Post gibt eine kleine Übersicht, wie der OpenFoxBlog aufgebaut wurde und warum man sich für die jeweiligen Tools bzw. wegen entschieden hat.&lt;br&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.
+      <description>In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.
 English version
 Wie wurde dieser Blog erstellt? Wie ich bereits in meinem vorherigen Post beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?</description>
-      <content:encoded>Dieser Post gibt eine kleine Übersicht, wie der OpenFoxBlog aufgebaut wurde und warum man sich für die jeweiligen Tools bzw. wegen entschieden hat.&lt;br&gt;&lt;p&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.&lt;/p&gt;
+      <content>&lt;p&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-wurde-dieser-blog-erstellt&#34;&gt;Wie wurde dieser Blog erstellt?&lt;/h1&gt;
 &lt;p&gt;Wie ich bereits &lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/#wie-kam-es-zu-diesem-blog&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
@@ -86,7 +86,7 @@ Zum Schluss gab es allerdings dann doch noch ein großes Problem. Die RSS Feed I
 &lt;p&gt;Das war es für den heutigen Artikel, ich hoffe, dass ich einen kleinen Einblick hinter die Kulissen dieses Blogs geben konnte und wünsche euch noch ein paar Rest Weihnachtsstimmung und einen guten Rutsch ins neue Jahr!&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
 &lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
-</content:encoded>
+</content>
     </item>
     
     <item>
@@ -95,10 +95,10 @@ Zum Schluss gab es allerdings dann doch noch ein großes Problem. Die RSS Feed I
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
       <guid>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</guid>
-      <description>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.
+      <description>Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.
 English version
 Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen.</description>
-      <content:encoded>In diesem Artikel wird eine Übersicht über die Entstehung dieses Blogs und seine Themengebiete gegeben.&lt;br&gt;&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;
+      <content>&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-kam-es-zu-diesem-blog&#34;&gt;Wie kam es zu diesem Blog?&lt;/h1&gt;
 &lt;p&gt;Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen. Gleichzeitig habe ich aber auch Projekte (vor allem Libraries) gefunden, welche gar nicht oder kaum Dokumentiert sind. Diese Ereignisse und natürlich auch einfach meine Begeisterung für das Open Source Konzept haben mich immer weiter dazu gebracht es wirklich mal zu versuchen selbst zu bloggen. Tatsächlich ist dies nicht mein erster Anlauf einen Blog zu starten. Die alte Version des OpenFoxBlogs war nur in Deutsch und ging leider auch nur bis zum dritten Blogpost. Grund für das Scheitern des Blogs war, dass ich mir das Design nicht gefallen hat und dass es mir nicht gefallen hat nur in Deutsch zu bloggen (vor allem, weil bei Programmierung fast nichts in Deutsch gemacht wird). Mein Gedanke damals war zuerst den Blog zu überarbeiten und dann schließlich weiter zu machen. Leider habe ich es dann fast ein Jahr vor mir hergeschoben. Ein entscheidender Grund dafür war z.B. auch, dass ich Jekyll als statistischen Website Generator benutzt habe. Jekyll ist an sich ein richtig gutes Tool für Blogging und profitiert sehr von GitHubs direkter Integration in GitHub Pages. Das entscheidende Problem ist aber leiser, dass man alles selber machen muss. Klar, es gibt viele Plugins, die einiges für dich machen, aber da meine HTML Kenntnisse sehr limitiert sind und mir HTML Scripting gar keinen Spaß macht, habe ich ewig damit gekämpft den Blog zwei sprachig zu gestalten. Ich habe sogar überlegt zwei Webseiten parallel zu machen. Am Ende habe ich Jekyll einfach gegen Hugo ausgetauscht. Hugo ist auch ein Statischer Website Generator, aber dieser hat direkt Integrationen für mehrsprachige Seiten und nimmt einem viel einfach ab. Einen Blogartikel darüber, wie ich meinen Blog Technisch umgesetzt habe wird bald kommen!&lt;/p&gt;
@@ -109,7 +109,7 @@ Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einig
 &lt;p&gt;Ich hoffe, dass ich hiermit einen guten Überblick über diesen Blog und meine Pläne für ihn erläutern konnte.&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
 &lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
-</content:encoded>
+</content>
     </item>
     
   </channel>
