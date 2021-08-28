@@ -200,7 +200,7 @@ I also recommend using CentOS 7 because CentOS 8 is only running until the end o
 <p>Also note that CentOS 7 is only supported until 2024 and it&rsquo;s possible, that RedHat is cutting down it&rsquo;s support like they did with CentOS 8. I wouldn&rsquo;t recommend CentOS stream, as it&rsquo;s not as secure and stable as the &ldquo;normal&rdquo; CentOS versions used to be. Please see <a href="https://rockylinux.org/">RockyLinux</a> (currently in pre-release), <a href="https://almalinux.org/">AlmaLinux</a> and <a href="https://www.cloudlinux.com/">CloudLinux</a> for good replacements. The installation and usage will be mostly (if not completely) the same.</p>
 <h1 id="installing-docker">Installing docker<a href="#installing-docker" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>To install docker, You only need to add the official docker repository to your Package Manager many and you are ready to go:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove conflicting packages</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># remove conflicting packages</span>
 sudo yum remove docker <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>                  docker-client <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>                  docker-client-latest <span style="color:#ae81ff">\
@@ -225,14 +225,14 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 <p>Smallstep is providing their ca on DockerHub <a href="https://hub.docker.com/r/smallstep/step-ca">smallstep/step-ca
 </a>. You will find more information there. The official dockerfile can be found <a href="https://github.com/smallstep/certificates/blob/master/docker/Dockerfile.step-ca">here</a>.</p>
 <h2 id="prepare-the-certification-authority">prepare the certification authority<a href="#prepare-the-certification-authority" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># pull the latest docker image</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># pull the latest docker image</span>
 docker pull smallstep/step-ca
 <span style="color:#75715e"># create a volume to store persistent data outside of the container</span>
 docker volume create step
 <span style="color:#75715e"># start a shell inside of the container</span>
 docker run -it -v step:/home/step smallstep/step-ca sh
 </code></pre></div><p>Now you should have a shell inside of the step-ca container open. We have to prepare the volume before we can use our ca. For that we have the following command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca init
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca init
 </code></pre></div><p>This basically asks you a few questions about the purpose of the ca (which will be stored inside of the &lsquo;root certificate&rsquo;) and create your root certificate (which is required for signing the ones of your services) and creates the required configuration files. The output should look something like this:</p>
 <pre><code>$ step ca init
 ✔ What would you like to name your new PKI?: Smallstep
@@ -278,14 +278,14 @@ If you are unfamiliar with vi, you just can install nano with <code>apk add nano
 <p>Now the CA is ready to use!</p>
 <h2 id="adding-acme-support">adding ACME support<a href="#adding-acme-support" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Step-ca is supporting ACME out-of-the-box, but it&rsquo;s not enabled by default. To enable it, just add the ACME provisioner to your configuration:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca provisioner add acme --type ACME
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca provisioner add acme --type ACME
 </code></pre></div><p>And we are done! Now you can exit the container with <code>exit</code>.</p>
 <h2 id="run-the-ca-for-the-first-time">run the ca for the first time:<a href="#run-the-ca-for-the-first-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 127.0.0.1:9000:9000 -v step:/home/step smallstep/step-ca
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 127.0.0.1:9000:9000 -v step:/home/step smallstep/step-ca
 </code></pre></div><p>This starts the ca in the background on port 9000. If you would rather have the ca on port 443 (so you don&rsquo;t have to specify the port in the URL) just change the port</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 127.0.0.1:443:9000 -v step:/home/step smallstep/step-ca
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 127.0.0.1:443:9000 -v step:/home/step smallstep/step-ca
 </code></pre></div><p>To use the ca in your local network, you have to change the port binding to your servers IP. This is an example for running it on the ip 10.10.10.40 on port 443:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 10.10.10.44:443:9000 -v step:/home/step smallstep/step-ca
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -d -p 10.10.10.44:443:9000 -v step:/home/step smallstep/step-ca
 </code></pre></div><p>Now you can actually use your ca!</p>
 <h2 id="making-the-ca-autostart">making the ca &ldquo;autostart&rdquo;<a href="#making-the-ca-autostart" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>There are quiet a few ways to autostart containers with docker. I usually run them with systemd, as it&rsquo;s also used for the system&rsquo;s services.</p>
@@ -308,29 +308,29 @@ ExecStop=/usr/bin/docker stop step-ca
 [Install]
 WantedBy=multi-user.target
 </code></pre><p>Now you just need to start and enable your newly created service:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start step-ca
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start step-ca
 sudo systemctl enable step-ca
 </code></pre></div><h1 id="testing-the-ca-for-functionality">Testing the CA for functionality<a href="#testing-the-ca-for-functionality" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>Now, after our ca is finally running, we just have to check if it&rsquo;s working correctly. In the same process, we are also making the <code>step</code> utility ready to be used on your local machine to interact with the ca.</p>
 <h2 id="installing-the-step-cli">installing the step cli<a href="#installing-the-step-cli" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>There are some distributions, that are packaging it already, but sadly not all.</p>
 <p>On Archlinux and Archlinux based distributions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu step-cli
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pacman -Syu step-cli
 </code></pre></div><blockquote>
 <p>Please note that you need to use the <code>step-cli</code> command instead of <code>step</code> on Archlinux!
 This is because <code>step</code> is already a packaged binary</p>
 </blockquote>
 <p>On MacOS using brew:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install step
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install step
 </code></pre></div><p>On Debian:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">VERSION<span style="color:#f92672">=</span>0.15.16
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">VERSION<span style="color:#f92672">=</span>0.15.16
 wget https://github.com/smallstep/cli/releases/download/v<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>/step-cli_<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>_amd64.deb
 sudo dpkg -i step-cli_<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>_amd64.deb
 </code></pre></div><blockquote>
 <p>Please note to change the VERSION variable to the <a href="https://github.com/smallstep/cli/releases/latest">newest one on github</a></p>
 </blockquote>
 <p>On Alpine Linux:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># add the testing repository, as step is not yet in the stable ones</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># add the testing repository, as step is not yet in the stable ones</span>
 echo <span style="color:#e6db74">&#34;http://dl-cdn.alpinelinux.org/alpine/edge/testing&#34;</span> &gt;&gt; /etc/apk/repositories
 <span style="color:#75715e"># finally install it using the apk package manager</span>
 apk add step-cli
@@ -339,7 +339,7 @@ apk add step-cli
 <p>The package is located <a href="https://search.nixos.org/packages?channel=20.09&amp;show=step-cli&amp;from=0&amp;size=50&amp;sort=relevance&amp;query=step-cli">here</a>, you might have to add the testing repository first, but I think that you know hoe to install packages if you are using NixOS :)</p>
 </blockquote>
 <p>On other Linux distributions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">VERSION<span style="color:#f92672">=</span>0.15.16
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">VERSION<span style="color:#f92672">=</span>0.15.16
 wget -O step.tar.gz https://github.com/smallstep/cli/releases/download/v<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>/step_linux_<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>_amd64.tar.gz
 tar -xf step.tar.gz
 sudo cp step_<span style="color:#e6db74">${</span>VERSION<span style="color:#e6db74">}</span>/bin/step /usr/bin
@@ -347,18 +347,18 @@ sudo cp step_<span style="color:#e6db74">${</span>VERSION<span style="color:#e6d
 <p>Please note to change the VERSION variable to the <a href="https://github.com/smallstep/cli/releases/latest">newest one on github</a></p>
 </blockquote>
 <p>To check if the installed package works, just print out the version:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step --version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step --version
 </code></pre></div><blockquote>
 <p>Note that some systems you need to run <code>step-cli --version</code></p>
 </blockquote>
 <h2 id="actually-testing-your-ca">Actually testing your CA<a href="#actually-testing-your-ca" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>The first thing we will do is bootstraping our ca. It means that we download our ca&rsquo;s root certificate validating it with our ca&rsquo;s fingerprint and storing a configuration file for the step util for saving our configuration.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca bootstrap --ca-url https://ca.example.org <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">step ca bootstrap --ca-url https://ca.example.org <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  --fingerprint &lt;fingerprint&gt; <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  --install <span style="color:#75715e"># optional, should install the root cert on your system, but does not work for me on Archlinux, CentOS and alpine</span>
 </code></pre></div><p>To install the certificate into your systems trust store, you have to check your systems documentation as it can vary a lot between different systems.</p>
 <p>finally you can test it:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl ca.example:port/health
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl ca.example:port/health
 </code></pre></div><p>If it&rsquo;s successful, you should see the following:</p>
 <pre><code>$ curl ca.example:port/health
 {&quot;status&quot;:&quot;ok&quot;}
