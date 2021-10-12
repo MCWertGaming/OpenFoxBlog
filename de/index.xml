@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenFoxBlog</title>
-    <link>https://mcwertgaming.github.io/de/</link>
+    <link>https://openfoxblog.leven.dev/de/</link>
     <description>Recent content on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2021 Damon Leven</copyright>
-    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://openfoxblog.leven.dev/de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ein Blick hinter die Kulissen</title>
-      <link>https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/</link>
+      <link>https://openfoxblog.leven.dev/de/2020/ein-blick-hinter-die-kulissen/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/</guid>
+      <guid>https://openfoxblog.leven.dev/de/2020/ein-blick-hinter-die-kulissen/</guid>
       <description>In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.
 English version
 Wie wurde dieser Blog erstellt? Wie ich bereits in meinem vorherigen Post beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?</description>
       <content>&lt;p&gt;In diesem Post erkläre ich, wie der OpenFoxBlog hinter den Kulissen aus einer Technischen Sicht funktioniert. Hierbei werde ich auf die Technische Lösung und die aufgetauchten Probleme dieses Blogs eingehen.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/2020/a-look-behind-the-scenes/&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-wurde-dieser-blog-erstellt&#34;&gt;Wie wurde dieser Blog erstellt?&lt;/h1&gt;
-&lt;p&gt;Wie ich bereits &lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/#wie-kam-es-zu-diesem-blog&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
+&lt;p&gt;Wie ich bereits &lt;a href=&#34;https://openfoxblog.leven.dev/de/2020/einf%C3%BChrung/#wie-kam-es-zu-diesem-blog&#34;&gt;in meinem vorherigen Post&lt;/a&gt; beschrieben habe, benutze ich für diesen Blog Hugo als statischen Website Generator. Aber was bedeutet das eigentlich? Und warum schreibe ich nicht einfach richtige HTML Seiten oder nehme medium oder WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;warum-nicht-einfach-medium-oder-wordpress&#34;&gt;Warum nicht einfach medium oder WordPress?&lt;/h1&gt;
 &lt;p&gt;Zunächst muss ich sagen, dass ich eine generelle Abneigung gegenüber WordPress habe. Geschrieben in altem PHP und durchlöchert mit vielen Problemen und Sicherheitsrisiken. Dazu kommt leider auch noch, dass ein Web Server Geld kostet und ich würde die Webseite ungern von zu Hause hosten, weil Web Server immer die ersten Ziele von automatischen Angriffen im Internet sind. Da WordPress damit aus meiner Entscheidung ausfällt, bleibt noch medium. Medium ist quasi eine Webseite, auf der man seine Blog Artikel einfach veröffentlichen kann. Da es hier nicht um ein generelles Thema geht, ist das tatsächlich sogar eine denkbare Alternative für mich. Allerdings habe ich mittlerweile viel Kritik an medium und daran, dass sie wohl aktiv versuchen die Artikel ihrer User aktiv zu monetarisieren. Ich möchte kein Geld mit meinen Artikeln machen und möchte auch, dass sie jeder kostenlos und ohne Werbung oder ähnlichen lesen kann. Ich möchte meine Gedanken auf den Bildschirm bringen und nicht Geld in meinen Geldbeutel.&lt;/p&gt;
 &lt;h1 id=&#34;was-ist-ein-statischer-website-generator&#34;&gt;Was ist ein Statischer Website Generator?&lt;/h1&gt;
@@ -38,8 +38,8 @@ Aber mein Lieblings Feature ist, dass ich die Artikel einfach in markdown schrei
 &lt;/ul&gt;
 &lt;h2 id=&#34;kleinere-überschrift&#34;&gt;Kleinere Überschrift&lt;/h2&gt;
 &lt;p&gt;Ein weiterer Test.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;Ein Link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;Ein Bild&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/&#34;&gt;Ein Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://openfoxblog.leven.dev/img/free-images/panorama.svg&#34; alt=&#34;Ein Bild&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fett&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Kursiv&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Durch gestrichen&lt;/del&gt;&lt;/p&gt;
@@ -85,21 +85,21 @@ Sonst lief alles super. Das Erstellen von neuen Seiten geht einfach so und auch 
 Zum Schluss gab es allerdings dann doch noch ein großes Problem. Die RSS Feed Integration ist für meinen Anwendungsfall sehr schlecht gemacht. Er wird automatisch erstellt, sogar für alle Sprachen, aber nur einer von beiden wird als html tag in die Seite hinzugefügt (damit man die RSS Feeds einfach mit einem Feed Reader finden kann). Dazu kam, dass nur der erste Absatz in die RSS Feeds hinzugefügt wurde. Nach dem Ändern ging allerdings der RSS nicht mehr, weil das konvertieren von markdown zu html den RSS Feed ungültig gemacht hat. Wie ich dieses Problem gelöst habe, werde ich in einem kommenden Post genauerer erklären.&lt;/p&gt;
 &lt;p&gt;Das war es für den heutigen Artikel, ich hoffe, dass ich einen kleinen Einblick hinter die Kulissen dieses Blogs geben konnte und wünsche euch noch ein paar Rest Weihnachtsstimmung und einen guten Rutsch ins neue Jahr!&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
-&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
+&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://openfoxblog.leven.dev/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Einführung</title>
-      <link>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</link>
+      <link>https://openfoxblog.leven.dev/de/2020/einf%C3%BChrung/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</guid>
+      <guid>https://openfoxblog.leven.dev/de/2020/einf%C3%BChrung/</guid>
       <description>Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.
 English version
 Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen.</description>
       <content>&lt;p&gt;Um diesen Blog zu starten, wird es in diesem Artikel um meine Intensionen für diesen Blog gehen. Ich werde die Entstehung und den Sinn dieses Blogs erläutern und ein Paar kleine Einblicke hinter die Kulissen geben. Auch um die Themen und Zielgruppen dieses Blogs soll es hier gehen.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/2020/introduction&#34;&gt;English version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;wie-kam-es-zu-diesem-blog&#34;&gt;Wie kam es zu diesem Blog?&lt;/h1&gt;
 &lt;p&gt;Die Idee für diesen Blog hatte ich bereits vor einiger Zeit. Als ich angefangen habe Programmieren zu lernen bin ich immer wieder auf Blogs gestoßen. Gleichzeitig habe ich aber auch Projekte (vor allem Libraries) gefunden, welche gar nicht oder kaum Dokumentiert sind. Diese Ereignisse und natürlich auch einfach meine Begeisterung für das Open Source Konzept haben mich immer weiter dazu gebracht es wirklich mal zu versuchen selbst zu bloggen. Tatsächlich ist dies nicht mein erster Anlauf einen Blog zu starten. Die alte Version des OpenFoxBlogs war nur in Deutsch und ging leider auch nur bis zum dritten Blogpost. Grund für das Scheitern des Blogs war, dass ich mir das Design nicht gefallen hat und dass es mir nicht gefallen hat nur in Deutsch zu bloggen (vor allem, weil bei Programmierung fast nichts in Deutsch gemacht wird). Mein Gedanke damals war zuerst den Blog zu überarbeiten und dann schließlich weiter zu machen. Leider habe ich es dann fast ein Jahr vor mir hergeschoben. Ein entscheidender Grund dafür war z.B. auch, dass ich Jekyll als statistischen Website Generator benutzt habe. Jekyll ist an sich ein richtig gutes Tool für Blogging und profitiert sehr von GitHubs direkter Integration in GitHub Pages. Das entscheidende Problem ist aber leiser, dass man alles selber machen muss. Klar, es gibt viele Plugins, die einiges für dich machen, aber da meine HTML Kenntnisse sehr limitiert sind und mir HTML Scripting gar keinen Spaß macht, habe ich ewig damit gekämpft den Blog zwei sprachig zu gestalten. Ich habe sogar überlegt zwei Webseiten parallel zu machen. Am Ende habe ich Jekyll einfach gegen Hugo ausgetauscht. Hugo ist auch ein Statischer Website Generator, aber dieser hat direkt Integrationen für mehrsprachige Seiten und nimmt einem viel einfach ab. Einen Blogartikel darüber, wie ich meinen Blog Technisch umgesetzt habe wird bald kommen!&lt;/p&gt;
 &lt;h1 id=&#34;was-möchte-ich-mit-diesem-blog-erreichen&#34;&gt;Was möchte ich mit diesem Blog erreichen?&lt;/h1&gt;
@@ -108,16 +108,16 @@ Wie kam es zu diesem Blog? Die Idee für diesen Blog hatte ich bereits vor einig
 &lt;p&gt;Dieser Blog wird alle möglichen Themen behandeln. Grundlegend wird der Fokus aber in Richtung Programmierung und Technologie gehen. Das alles gemischt mit weiteren, kleineren Themen, z.B. Erfahrungen aus meinem Leben, oder Meinungen zu bestimmten Themen. Bei Programmierung wird der Fokus auf Desktopentwicklung mit C++ sein. Dabei allerdings sowohl Programmierung in der Konsole und als grafische Benutzeroberfläche. Um genau zu sein, wird es vor allem um Spieleentwicklung gehen.&lt;/p&gt;
 &lt;p&gt;Ich hoffe, dass ich hiermit einen guten Überblick über diesen Blog und meine Pläne für ihn erläutern konnte.&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
-&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
+&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://openfoxblog.leven.dev/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Kontakt</title>
-      <link>https://mcwertgaming.github.io/de/kontakt/</link>
+      <link>https://openfoxblog.leven.dev/de/kontakt/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/de/kontakt/</guid>
+      <guid>https://openfoxblog.leven.dev/de/kontakt/</guid>
       <description>OpenFoxBlog wird von Damon / Stax geführt. Ihn findet man auf folgenden Social Media Kanälen:
 
 
@@ -134,23 +134,23 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
 &lt;p&gt;Für rechtliche Angelegenheiten gilt deutsches Recht, hierbei bitte eine E-Mail schreiben.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS Feeds&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/index.xml&#34;&gt;Nur Deutsche Artikel&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/index.xml&#34;&gt;Nur englische Artikel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/de/index.xml&#34;&gt;Nur Deutsche Artikel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/index.xml&#34;&gt;Nur englische Artikel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Die RSS Feeds sind immer aktuell und beinhalten die vollen Artikel, statt nur den Anfang.&lt;/p&gt;
 &lt;h1 id=&#34;verwendung-von-teilen-dieses-blogs&#34;&gt;Verwendung von teilen dieses Blogs&lt;/h1&gt;
 &lt;p&gt;Vervielfältigen und veröffentlichen der hier veröffentlichten Artikel ohne das Einverständnis des Autors ist nicht erlaubt! Jeglicher code in den Artikeln ist unter den Bedingungen der &lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;MIT&lt;/a&gt; Lizenz zu behandeln. Verweisen auf einen ganzen, oder Teile eines hier veröffentlichten Artikels ist mit Quellen zum originalen Artikel zu versehen.&lt;/p&gt;
 &lt;h4 id=&#34;frohes-programmieren&#34;&gt;Frohes Programmieren!&lt;/h4&gt;
-&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://mcwertgaming.github.io/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
+&lt;p&gt;Quellen von hier benutzter software und assets koennen &lt;a href=&#34;https://openfoxblog.leven.dev/de/%C3%BCber-mich/#in-dieser-seite-verwendete-software&#34;&gt;hier&lt;/a&gt; gefunden werden.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Über mich</title>
-      <link>https://mcwertgaming.github.io/de/%C3%BCber-mich/</link>
+      <link>https://openfoxblog.leven.dev/de/%C3%BCber-mich/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/de/%C3%BCber-mich/</guid>
+      <guid>https://openfoxblog.leven.dev/de/%C3%BCber-mich/</guid>
       <description>Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.
 Über den Autor Ich bin Damon, manche kennen mich aber auch als Stax, ich bin beginnender C++ Programmierer und Linux bzw. Open Source Nutzer. Mit diesem Blog möchte meine Erfahrungen und Erkenntnisse in der Programmierung und in damit verbundenen Themen, wie Linux, Libraries und dergleichen dokumentieren und teilen.</description>
       <content>&lt;p&gt;Willkommen auf meinem Blog! Hier wird es über alle möglichen Themen zu Programmierung, Linux, Hosting und ähnliches gehen. Off-topic und dergleichen wird es nach und nach auch geben, aber Programmierung ist das Thema, auf welches sich dieser Blog fokussiert.&lt;/p&gt;
@@ -160,7 +160,7 @@ Verwendung von teilen dieses Blogs Vervielfältigen und veröffentlichen der hie
 &lt;p&gt;Viele der englischen Artikel Könen zusätzlich nicht nur auf meinem Blog, &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;sondern auch bei dev.to gelesen werden&lt;/a&gt;. Das mache ich, um mehr Leute mit meinen Artikeln zu erreichen und mich mit mehr Leuten bei diesem Thema zu verbinden.&lt;/p&gt;
 &lt;h1 id=&#34;keine-neuen-artikel-verpassen&#34;&gt;Keine neuen Artikel verpassen&lt;/h1&gt;
 &lt;p&gt;Um mit diesem Blog auf dem Laufenden zu bleiben gibt es einige Möglichkeiten:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/kontakt/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/de/kontakt/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Oder füge meinen Blog einfach zu deinen Lesezeichen bzw. deinem Home-screen hinzu&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenFoxBlog</title>
-    <link>https://mcwertgaming.github.io/</link>
+    <link>https://openfoxblog.leven.dev/</link>
     <description>Recent content on OpenFoxBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>mcwertgaming@gmail.com (Damon Leven)</managingEditor>
     <webMaster>mcwertgaming@gmail.com (Damon Leven)</webMaster>
     <copyright>© 2021 Damon Leven</copyright>
-    <lastBuildDate>Wed, 26 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mcwertgaming.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://openfoxblog.leven.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up step-ca with docker on CentOS</title>
-      <link>https://mcwertgaming.github.io/2021/setting-up-step-ca-with-docker-on-centos/</link>
+      <link>https://openfoxblog.leven.dev/2021/setting-up-step-ca-with-docker-on-centos/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/2021/setting-up-step-ca-with-docker-on-centos/</guid>
+      <guid>https://openfoxblog.leven.dev/2021/setting-up-step-ca-with-docker-on-centos/</guid>
       <description>In this small blog post, I&amp;rsquo;ll explain how I&amp;rsquo;m running my personal Certification Authority (CA) at home for securing my local web traffic with automated encryption.
 German version (soon)
 Why Smallstep certification authority? My goal was to protect my local traffic with SSL but without having to deal with certificates. The problem with using Let&amp;rsquo;s Encrypt is that it won&amp;rsquo;t work without exposing the web service on port 80 / 443 to the public which I don&amp;rsquo;t want to do for all of my services.</description>
@@ -71,7 +71,7 @@ docker run -it -v step:/home/step smallstep/step-ca sh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you should have a shell inside of the step-ca container open. We have to prepare the volume before we can use our ca. For that we have the following command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;step ca init
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This basically asks you a few questions about the purpose of the ca (which will be stored inside of the &amp;lsquo;root certificate&amp;rsquo;) and create your root certificate (which is required for signing the ones of your services) and creates the required configuration files. The output should look something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ step ca init
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ step ca init
 ✔ What would you like to name your new PKI?: Smallstep
 ✔ What DNS names or IP addresses would you like to add to your new CA? localhost
 ✔ What address will your new CA listen at?: :9000
@@ -102,7 +102,7 @@ Now we have to store the password somewhere for the container. The password is b
 &lt;p&gt;Note that this method is not secure in any way and should only be used for testing or local use. If you want to do it really secure, smallstep recommends to use an hardware encrypted device for storing and accessing the private key (yubikey for example, currently 45$ on amazon). &lt;a href=&#34;https://smallstep.com/blog/build-a-tiny-ca-with-raspberry-pi-yubikey/&#34;&gt;An Really good walk through on how to set it up with the Raspberry pi 4 is available on their blog&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To do that, you basically just have to do:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vi /home/step/secrets/password
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vi /home/step/secrets/password
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and paste your password in there.
 If you are unfamiliar with vi, you just can install nano with &lt;code&gt;apk add nano&lt;/code&gt; or look at these instructions:&lt;/p&gt;
 &lt;ul&gt;
@@ -127,7 +127,7 @@ If you are unfamiliar with vi, you just can install nano with &lt;code&gt;apk ad
 &lt;h2 id=&#34;making-the-ca-autostart&#34;&gt;making the ca &amp;ldquo;autostart&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;There are quiet a few ways to autostart containers with docker. I usually run them with systemd, as it&amp;rsquo;s also used for the system&amp;rsquo;s services.&lt;/p&gt;
 &lt;p&gt;This is an example systemd unit file:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# step-ca sample systemd unit
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# step-ca sample systemd unit
 # located in /usr/local/lib/systemd/system/step-ca.service
 [Unit]
 Description=Smallstep certification authority
@@ -197,7 +197,7 @@ sudo cp step_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt
 &lt;p&gt;finally you can test it:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl ca.example:port/health
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If it&amp;rsquo;s successful, you should see the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ curl ca.example:port/health
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ curl ca.example:port/health
 {&amp;quot;status&amp;quot;:&amp;quot;ok&amp;quot;}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And now you are done! See my other posts about what and how to do after finishing setting up the ca:&lt;/p&gt;
 &lt;ul&gt;
@@ -208,23 +208,23 @@ sudo cp step_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt
 &lt;li&gt;Exposing services on multiple servers securely to the web (coming soon)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
-&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://openfoxblog.leven.dev/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>A look behind the scenes</title>
-      <link>https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/</link>
+      <link>https://openfoxblog.leven.dev/2020/a-look-behind-the-scenes/</link>
       <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/</guid>
+      <guid>https://openfoxblog.leven.dev/2020/a-look-behind-the-scenes/</guid>
       <description>In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.
 German version
 How was this blog setup? I already talked in an earlier post, that I&amp;rsquo;m using Hugo as static website generator.</description>
       <content>&lt;p&gt;In this post, I will give some insight on the technical behind the scenes of OpenFoxBlog. This will include how it is technically accomplished and what problems I encountered on my way. later on, I will explain why I have chosen the way I have in matter of the tools and services.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/de/2020/ein-blick-hinter-die-kulissen/&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-was-this-blog-setup&#34;&gt;How was this blog setup?&lt;/h1&gt;
-&lt;p&gt;I already talked &lt;a href=&#34;https://mcwertgaming.github.io/2020/introduction/#how-did-this-blog-come-about&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
+&lt;p&gt;I already talked &lt;a href=&#34;https://openfoxblog.leven.dev/2020/introduction/#how-did-this-blog-come-about&#34;&gt;in an earlier post&lt;/a&gt;, that I&amp;rsquo;m using Hugo as static website generator. But what does that mean? And why am I not just writing HTML files directly or am using something like medium or WordPress?&lt;/p&gt;
 &lt;h1 id=&#34;why-not-just-medium-or-wordpress&#34;&gt;Why not just medium or Wordpress?&lt;/h1&gt;
 &lt;p&gt;First of all, I have a big problem with WordPress. Written in old PHP and lacking on proper security with a lot of problems and downsides. At the same time, I would have to buy or host a webserver to serve my site which would cost me money (even though, there are some free ones available I think). Because WordPress Isn&amp;rsquo;t an option I would go with, there is only medium left. I haven&amp;rsquo;t tried medium myself, but I read multiple times now, that people are criticizing on how medium tries to monetize their blog and posts. I really dislike that, because I want everyone to be able to read my blog without paying for it or having to look at dumb ads. Not to forget the tracking on free sites. In the end I chose to create my blog with Hugo and host it for free on GitHub. I want to get my thought onto the screen, not money into my pocket.&lt;/p&gt;
 &lt;h1 id=&#34;what-is-a-static-website-generator&#34;&gt;What is a static website generator?&lt;/h1&gt;
@@ -239,8 +239,8 @@ But my personal favorite is the ability to just write you blog-posts in pure mar
 &lt;li&gt;second part of a list&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;smaller-heading&#34;&gt;smaller Heading&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/&#34;&gt;A link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://mcwertgaming.github.io/img/free-images/panorama.svg&#34; alt=&#34;A picture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/&#34;&gt;A link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://openfoxblog.leven.dev/img/free-images/panorama.svg&#34; alt=&#34;A picture&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Emphasized&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
@@ -283,16 +283,16 @@ All other things went without problems at all. I could just create all required 
 At the end there was actually one a bit bigger problem. The default RSS feed configuration didn&amp;rsquo;t suite my needs. It just includes the first paragraph inside the feed instead of just providing the full post. After changing that, the markdown converter of Hugo included illegal character inside of the xml file and made it corrupt. I will make a dedicated post on how I fixed that real soon. stay tuned!&lt;/p&gt;
 &lt;p&gt;Thats for today&amp;rsquo;s post. I hope you enjoyed this little behind the scenes and with you some happy last Christmas days as well as a great new year!&lt;/p&gt;
 &lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
-&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://openfoxblog.leven.dev/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://mcwertgaming.github.io/about/</link>
+      <link>https://openfoxblog.leven.dev/about/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/about/</guid>
+      <guid>https://openfoxblog.leven.dev/about/</guid>
       <description>Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.
 About the author I’m Damon, some might know me as Stax. I’m a beginning C++ programmer and a big Linux and opensource enthusiast. On this blog, I want to document and share my experiences and knowledge in all kinds of topics I’m interested in.</description>
       <content>&lt;p&gt;Welcome to my blog! It will cover a wide range of different topics around programming, Linux, hosting and similar. Off topic and such will be covered a bit as well, but programming will be the main focus of this Blog.&lt;/p&gt;
@@ -302,7 +302,7 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
 &lt;p&gt;Most of the English Articles can also be found and read &lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;on dev.to&lt;/a&gt;. I’m publishing most articles there as well, because it’s a good way to share my posts with more people. Dev.to is at the same time a really awesome community centric project I want to contribute to.&lt;/p&gt;
 &lt;h1 id=&#34;dont-miss-new-articles&#34;&gt;Don’t miss new articles&lt;/h1&gt;
 &lt;p&gt;To always be on track with my blog there are many ways to accomplish that:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/contact/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/contact/#rss-feeds&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/RSS-FFA500?style=for-the-badge&amp;amp;logo=rss&amp;amp;logoColor=white&#34; alt=&#34;RSS&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/staxthefox&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&amp;amp;logo=twitter&amp;amp;logoColor=white&#34; alt=&#34;Twitter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://dev.to/mcwertgaming&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;amp;logo=dev.to&amp;amp;logoColor=white&#34; alt=&#34;dev.to&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -320,10 +320,10 @@ About the author I’m Damon, some might know me as Stax. I’m a beginning C++ 
     
     <item>
       <title>Contact</title>
-      <link>https://mcwertgaming.github.io/contact/</link>
+      <link>https://openfoxblog.leven.dev/contact/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/contact/</guid>
+      <guid>https://openfoxblog.leven.dev/contact/</guid>
       <description>OpenFoxBlog is run by Damon / Stax. You can find him on the following social media accounts:
 
 
@@ -340,28 +340,28 @@ Usage of Articles or parts of this blog Distributing and publishing Articles fro
 &lt;p&gt;Please follow German right for legal inquiries. Please send me an e-mail.&lt;/p&gt;
 &lt;h1 id=&#34;rss-feeds&#34;&gt;RSS feeds&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/index.xml&#34;&gt;English articles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/index.xml&#34;&gt;German articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/index.xml&#34;&gt;English articles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/de/index.xml&#34;&gt;German articles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;All RSS feeds are always up to date and provide the full article, not just the beginning.&lt;/p&gt;
 &lt;h1 id=&#34;usage-of-articles-or-parts-of-this-blog&#34;&gt;Usage of Articles or parts of this blog&lt;/h1&gt;
 &lt;p&gt;Distributing and publishing Articles from this blog is not allowed without the Authors agreement! All code located inside the Articles are licensed under the terms of the &lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;MIT&lt;/a&gt; license. Quoting or referencing on whole or part of Articles from this blog must be referenced with providing the source.&lt;/p&gt;
 &lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
-&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://openfoxblog.leven.dev/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>https://mcwertgaming.github.io/2020/introduction/</link>
+      <link>https://openfoxblog.leven.dev/2020/introduction/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
       <author>mcwertgaming@gmail.com (Damon Leven)</author>
-      <guid>https://mcwertgaming.github.io/2020/introduction/</guid>
+      <guid>https://openfoxblog.leven.dev/2020/introduction/</guid>
       <description>To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.
 German version
 How did this blog come about? I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again.</description>
       <content>&lt;p&gt;To start this blog, this article will be about my intensions for it. I will explain the origin and the purpose of this blog and give a couple of small insights behind the scenes. Also, the topics and target groups of this blog will be discussed.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://mcwertgaming.github.io/de/2020/einf%C3%BChrung&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://openfoxblog.leven.dev/de/2020/einf%C3%BChrung&#34;&gt;German version&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;how-did-this-blog-come-about&#34;&gt;How did this blog come about?&lt;/h1&gt;
 &lt;p&gt;I had the idea for this blog some time ago. When I started to learn programming, I came across blogs again and again. But at the same time, I found projects (especially libraries) which are not documented at all or hardly. These events and of course my enthusiasm for the open-source concept made me try to blog myself. In fact, this is not my first attempt to start a blog. The old version of the OpenFoxBlog was only in German and unfortunately only went as far as the third blog post. The reason for the failure was that I didn’t like the design that much and didn’t wanted to blog only in German (especially because in programming almost nothing is done in German). My thought at that time was first to revise the blog and then finally to continue. Unfortunately, I put it off for almost a year. One of the main reasons was that I used Jekyll as a static website generator. Jekyll is in itself a really good tool for blogging and benefits a lot from GitHub’s direct integration with GitHub Pages. The crucial problem, however, is that you have to do everything yourself. Sure, there are many plugins that do some things for you, but since my HTML knowledge is very limited and I don’t enjoy scripting in that language at all, I struggled a long time to make the blog bi-lingual. I even considered making two websites in parallel. In the end I just replaced Jekyll with Hugo. Hugo is also a static website generator, but this one has direct integrations for multilingual sites and takes a lot off your plate. A blog article about how I technically implemented my blog will be coming soon!&lt;/p&gt;
 &lt;h1 id=&#34;what-do-i-want-to-achieve-with-this-blog&#34;&gt;What do I want to achieve with this blog?&lt;/h1&gt;
@@ -370,7 +370,7 @@ How did this blog come about? I had the idea for this blog some time ago. When I
 &lt;p&gt;This blog will cover all kinds of topics. But basically, the focus will be on programming and technology. All that mixed with other, smaller topics, e.g. experiences from my life, or opinions about certain topics. Programming will focus on desktop development with C++. However, both programming in the console and as a graphical user interface. To be more precise, it will be mainly about game development.&lt;/p&gt;
 &lt;p&gt;I hope this has given you a good overview of this blog and my plans for it. With that until the next article and stay healthy!&lt;/p&gt;
 &lt;h4 id=&#34;happy-coding&#34;&gt;Happy coding!&lt;/h4&gt;
-&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://mcwertgaming.github.io/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sources of used software and assets on this site can be found &lt;a href=&#34;https://openfoxblog.leven.dev/about/#software-used-on-this-site&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
     </item>
     

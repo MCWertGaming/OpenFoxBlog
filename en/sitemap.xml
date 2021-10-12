@@ -2,87 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mcwertgaming.github.io/</loc>
+    <loc>https://openfoxblog.leven.dev/</loc>
     <lastmod>2021-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/"
+                href="https://openfoxblog.leven.dev/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/"
+                href="https://openfoxblog.leven.dev/"
                 />
   </url><url>
-    <loc>https://mcwertgaming.github.io/posts/</loc>
+    <loc>https://openfoxblog.leven.dev/posts/</loc>
     <lastmod>2021-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/posts/"
+                href="https://openfoxblog.leven.dev/de/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/posts/"
+                href="https://openfoxblog.leven.dev/posts/"
                 />
   </url><url>
-    <loc>https://mcwertgaming.github.io/2021/setting-up-step-ca-with-docker-on-centos/</loc>
+    <loc>https://openfoxblog.leven.dev/2021/setting-up-step-ca-with-docker-on-centos/</loc>
     <lastmod>2021-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/2020/a-look-behind-the-scenes/</loc>
+    <loc>https://openfoxblog.leven.dev/2020/a-look-behind-the-scenes/</loc>
     <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/about/</loc>
+    <loc>https://openfoxblog.leven.dev/about/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/contact/</loc>
+    <loc>https://openfoxblog.leven.dev/contact/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/2020/introduction/</loc>
+    <loc>https://openfoxblog.leven.dev/2020/introduction/</loc>
     <lastmod>2020-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/categories/</loc>
+    <loc>https://openfoxblog.leven.dev/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/categories/"
+                href="https://openfoxblog.leven.dev/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/categories/"
+                href="https://openfoxblog.leven.dev/categories/"
                 />
   </url><url>
-    <loc>https://mcwertgaming.github.io/tags/</loc>
+    <loc>https://openfoxblog.leven.dev/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/tags/"
+                href="https://openfoxblog.leven.dev/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/tags/"
+                href="https://openfoxblog.leven.dev/tags/"
                 />
   </url>
 </urlset>

@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mcwertgaming.github.io/de/2020/ein-blick-hinter-die-kulissen/</loc>
+    <loc>https://openfoxblog.leven.dev/de/2020/ein-blick-hinter-die-kulissen/</loc>
     <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://mcwertgaming.github.io/de/</loc>
-    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mcwertgaming.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://mcwertgaming.github.io/de/"
-                />
-  </url><url>
-    <loc>https://mcwertgaming.github.io/de/posts/</loc>
+    <loc>https://openfoxblog.leven.dev/de/</loc>
     <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/posts/"
+                href="https://openfoxblog.leven.dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/posts/"
+                href="https://openfoxblog.leven.dev/de/"
                 />
   </url><url>
-    <loc>https://mcwertgaming.github.io/de/2020/einf%C3%BChrung/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://mcwertgaming.github.io/de/kontakt/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://mcwertgaming.github.io/de/%C3%BCber-mich/</loc>
-    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://mcwertgaming.github.io/de/categories/</loc>
+    <loc>https://openfoxblog.leven.dev/de/posts/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/categories/"
+                href="https://openfoxblog.leven.dev/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/categories/"
+                href="https://openfoxblog.leven.dev/de/posts/"
                 />
   </url><url>
-    <loc>https://mcwertgaming.github.io/de/tags/</loc>
+    <loc>https://openfoxblog.leven.dev/de/2020/einf%C3%BChrung/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://openfoxblog.leven.dev/de/kontakt/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://openfoxblog.leven.dev/de/%C3%BCber-mich/</loc>
+    <lastmod>2020-12-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://openfoxblog.leven.dev/de/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mcwertgaming.github.io/tags/"
+                href="https://openfoxblog.leven.dev/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mcwertgaming.github.io/de/tags/"
+                href="https://openfoxblog.leven.dev/de/categories/"
+                />
+  </url><url>
+    <loc>https://openfoxblog.leven.dev/de/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openfoxblog.leven.dev/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://openfoxblog.leven.dev/de/tags/"
                 />
   </url>
 </urlset>
