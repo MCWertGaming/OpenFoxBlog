@@ -37,24 +37,24 @@ I also recommend using CentOS 7 because CentOS 8 is only running until the end o
 &lt;p&gt;Also note that CentOS 7 is only supported until 2024 and it&amp;rsquo;s possible, that RedHat is cutting down it&amp;rsquo;s support like they did with CentOS 8. I wouldn&amp;rsquo;t recommend CentOS stream, as it&amp;rsquo;s not as secure and stable as the &amp;ldquo;normal&amp;rdquo; CentOS versions used to be. Please see &lt;a href=&#34;https://rockylinux.org/&#34;&gt;RockyLinux&lt;/a&gt; (currently in pre-release), &lt;a href=&#34;https://almalinux.org/&#34;&gt;AlmaLinux&lt;/a&gt; and &lt;a href=&#34;https://www.cloudlinux.com/&#34;&gt;CloudLinux&lt;/a&gt; for good replacements. The installation and usage will be mostly (if not completely) the same.&lt;/p&gt;
 &lt;h1 id=&#34;installing-docker&#34;&gt;Installing docker&lt;/h1&gt;
 &lt;p&gt;To install docker, You only need to add the official docker repository to your Package Manager many and you are ready to go:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# remove conflicting packages&lt;/span&gt;
-sudo yum remove docker &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-client &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-client-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-common &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-latest-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-engine
-&lt;span style=&#34;color:#75715e&#34;&gt;# install yum-utils for the yum-config-manager&lt;/span&gt;
-sudo yum install -y yum-utils
-&lt;span style=&#34;color:#75715e&#34;&gt;# install the docker ce repository&lt;/span&gt;
-sudo yum-config-manager &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    --add-repo &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    https://download.docker.com/linux/centos/docker-ce.repo
-&lt;span style=&#34;color:#75715e&#34;&gt;# finally install docker&lt;/span&gt;
-sudo yum install docker-ce docker-ce-cli containerd.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# remove conflicting packages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum remove docker &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-client &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-client-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-common &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-latest &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-latest-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-logrotate &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;                  docker-engine
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install yum-utils for the yum-config-manager&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install -y yum-utils
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install the docker ce repository&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum-config-manager &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    --add-repo &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    https://download.docker.com/linux/centos/docker-ce.repo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# finally install docker&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install docker-ce docker-ce-cli containerd.io
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://docs.docker.com/engine/install/centos/&#34;&gt;Taken from the official docker documentation.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;And you are ready to go!&lt;/p&gt;
@@ -62,15 +62,15 @@ sudo yum install docker-ce docker-ce-cli containerd.io
 &lt;p&gt;Smallstep is providing their ca on DockerHub &lt;a href=&#34;https://hub.docker.com/r/smallstep/step-ca&#34;&gt;smallstep/step-ca
 &lt;/a&gt;. You will find more information there. The official dockerfile can be found &lt;a href=&#34;https://github.com/smallstep/certificates/blob/master/docker/Dockerfile.step-ca&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;prepare-the-certification-authority&#34;&gt;prepare the certification authority&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pull the latest docker image&lt;/span&gt;
-docker pull smallstep/step-ca
-&lt;span style=&#34;color:#75715e&#34;&gt;# create a volume to store persistent data outside of the container&lt;/span&gt;
-docker volume create step
-&lt;span style=&#34;color:#75715e&#34;&gt;# start a shell inside of the container&lt;/span&gt;
-docker run -it -v step:/home/step smallstep/step-ca sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you should have a shell inside of the step-ca container open. We have to prepare the volume before we can use our ca. For that we have the following command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;step ca init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This basically asks you a few questions about the purpose of the ca (which will be stored inside of the &amp;lsquo;root certificate&amp;rsquo;) and create your root certificate (which is required for signing the ones of your services) and creates the required configuration files. The output should look something like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# pull the latest docker image&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker pull smallstep/step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# create a volume to store persistent data outside of the container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker volume create step
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# start a shell inside of the container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -it -v step:/home/step smallstep/step-ca sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you should have a shell inside of the step-ca container open. We have to prepare the volume before we can use our ca. For that we have the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;step ca init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This basically asks you a few questions about the purpose of the ca (which will be stored inside of the &amp;lsquo;root certificate&amp;rsquo;) and create your root certificate (which is required for signing the ones of your services) and creates the required configuration files. The output should look something like this:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ step ca init
 ✔ What would you like to name your new PKI?: Smallstep
 ✔ What DNS names or IP addresses would you like to add to your new CA? localhost
@@ -92,7 +92,7 @@ all done!
 ✔ Default configuration: /home/step/config/defaults.json
 ✔ Certificate Authority configuration: /home/step/config/ca.json
 
-Your PKI is ready to go. To generate certificates for individual services see &#39;step help ca`}
+Your PKI is ready to go. To generate certificates for individual services see &amp;#39;step help ca`}
 &lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://hub.docker.com/r/smallstep/step-ca&#34;&gt;Taken from the official docker container page on DockerHub&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -115,15 +115,15 @@ If you are unfamiliar with vi, you just can install nano with &lt;code&gt;apk ad
 &lt;p&gt;Now the CA is ready to use!&lt;/p&gt;
 &lt;h2 id=&#34;adding-acme-support&#34;&gt;adding ACME support&lt;/h2&gt;
 &lt;p&gt;Step-ca is supporting ACME out-of-the-box, but it&amp;rsquo;s not enabled by default. To enable it, just add the ACME provisioner to your configuration:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;step ca provisioner add acme --type ACME
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And we are done! Now you can exit the container with &lt;code&gt;exit&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;step ca provisioner add acme --type ACME
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And we are done! Now you can exit the container with &lt;code&gt;exit&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;run-the-ca-for-the-first-time&#34;&gt;run the ca for the first time:&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d -p 127.0.0.1:9000:9000 -v step:/home/step smallstep/step-ca
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This starts the ca in the background on port 9000. If you would rather have the ca on port 443 (so you don&amp;rsquo;t have to specify the port in the URL) just change the port&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d -p 127.0.0.1:443:9000 -v step:/home/step smallstep/step-ca
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use the ca in your local network, you have to change the port binding to your servers IP. This is an example for running it on the ip 10.10.10.40 on port 443:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -d -p 10.10.10.44:443:9000 -v step:/home/step smallstep/step-ca
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you can actually use your ca!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d -p 127.0.0.1:9000:9000 -v step:/home/step smallstep/step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This starts the ca in the background on port 9000. If you would rather have the ca on port 443 (so you don&amp;rsquo;t have to specify the port in the URL) just change the port&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d -p 127.0.0.1:443:9000 -v step:/home/step smallstep/step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To use the ca in your local network, you have to change the port binding to your servers IP. This is an example for running it on the ip 10.10.10.40 on port 443:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d -p 10.10.10.44:443:9000 -v step:/home/step smallstep/step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now you can actually use your ca!&lt;/p&gt;
 &lt;h2 id=&#34;making-the-ca-autostart&#34;&gt;making the ca &amp;ldquo;autostart&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;There are quiet a few ways to autostart containers with docker. I usually run them with systemd, as it&amp;rsquo;s also used for the system&amp;rsquo;s services.&lt;/p&gt;
 &lt;p&gt;This is an example systemd unit file:&lt;/p&gt;
@@ -145,60 +145,60 @@ ExecStop=/usr/bin/docker stop step-ca
 [Install]
 WantedBy=multi-user.target
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now you just need to start and enable your newly created service:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo systemctl start step-ca
-sudo systemctl enable step-ca
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;testing-the-ca-for-functionality&#34;&gt;Testing the CA for functionality&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl start step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable step-ca
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;testing-the-ca-for-functionality&#34;&gt;Testing the CA for functionality&lt;/h1&gt;
 &lt;p&gt;Now, after our ca is finally running, we just have to check if it&amp;rsquo;s working correctly. In the same process, we are also making the &lt;code&gt;step&lt;/code&gt; utility ready to be used on your local machine to interact with the ca.&lt;/p&gt;
 &lt;h2 id=&#34;installing-the-step-cli&#34;&gt;installing the step cli&lt;/h2&gt;
 &lt;p&gt;There are some distributions, that are packaging it already, but sadly not all.&lt;/p&gt;
 &lt;p&gt;On Archlinux and Archlinux based distributions:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo pacman -Syu step-cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo pacman -Syu step-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Please note that you need to use the &lt;code&gt;step-cli&lt;/code&gt; command instead of &lt;code&gt;step&lt;/code&gt; on Archlinux!
 This is because &lt;code&gt;step&lt;/code&gt; is already a packaged binary&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;On MacOS using brew:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install step
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Debian:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.15.16
-wget https://github.com/smallstep/cli/releases/download/v&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/step-cli_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.deb
-sudo dpkg -i step-cli_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.deb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install step
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Debian:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.15.16
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://github.com/smallstep/cli/releases/download/v&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/step-cli_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dpkg -i step-cli_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Please note to change the VERSION variable to the &lt;a href=&#34;https://github.com/smallstep/cli/releases/latest&#34;&gt;newest one on github&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;On Alpine Linux:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# add the testing repository, as step is not yet in the stable ones&lt;/span&gt;
-echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://dl-cdn.alpinelinux.org/alpine/edge/testing&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/apk/repositories
-&lt;span style=&#34;color:#75715e&#34;&gt;# finally install it using the apk package manager&lt;/span&gt;
-apk add step-cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On NixOS:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# add the testing repository, as step is not yet in the stable ones&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://dl-cdn.alpinelinux.org/alpine/edge/testing&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/apk/repositories
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# finally install it using the apk package manager&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;apk add step-cli
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On NixOS:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The package is located &lt;a href=&#34;https://search.nixos.org/packages?channel=20.09&amp;amp;show=step-cli&amp;amp;from=0&amp;amp;size=50&amp;amp;sort=relevance&amp;amp;query=step-cli&#34;&gt;here&lt;/a&gt;, you might have to add the testing repository first, but I think that you know hoe to install packages if you are using NixOS :)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;On other Linux distributions:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.15.16
-wget -O step.tar.gz https://github.com/smallstep/cli/releases/download/v&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/step_linux_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.tar.gz
-tar -xf step.tar.gz
-sudo cp step_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/bin/step /usr/bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;0.15.16
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -O step.tar.gz https://github.com/smallstep/cli/releases/download/v&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/step_linux_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;_amd64.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tar -xf step.tar.gz
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo cp step_&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;VERSION&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;/bin/step /usr/bin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Please note to change the VERSION variable to the &lt;a href=&#34;https://github.com/smallstep/cli/releases/latest&#34;&gt;newest one on github&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To check if the installed package works, just print out the version:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;step --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;step --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Note that some systems you need to run &lt;code&gt;step-cli --version&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;actually-testing-your-ca&#34;&gt;Actually testing your CA&lt;/h2&gt;
 &lt;p&gt;The first thing we will do is bootstraping our ca. It means that we download our ca&amp;rsquo;s root certificate validating it with our ca&amp;rsquo;s fingerprint and storing a configuration file for the step util for saving our configuration.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;step ca bootstrap --ca-url https://ca.example.org &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --fingerprint &amp;lt;fingerprint&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --install &lt;span style=&#34;color:#75715e&#34;&gt;# optional, should install the root cert on your system, but does not work for me on Archlinux, CentOS and alpine&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install the certificate into your systems trust store, you have to check your systems documentation as it can vary a lot between different systems.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;step ca bootstrap --ca-url https://ca.example.org &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --fingerprint &amp;lt;fingerprint&amp;gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  --install &lt;span style=&#34;color:#75715e&#34;&gt;# optional, should install the root cert on your system, but does not work for me on Archlinux, CentOS and alpine&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install the certificate into your systems trust store, you have to check your systems documentation as it can vary a lot between different systems.&lt;/p&gt;
 &lt;p&gt;finally you can test it:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl ca.example:port/health
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If it&amp;rsquo;s successful, you should see the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl ca.example:port/health
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If it&amp;rsquo;s successful, you should see the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ curl ca.example:port/health
-{&amp;quot;status&amp;quot;:&amp;quot;ok&amp;quot;}
+{&amp;#34;status&amp;#34;:&amp;#34;ok&amp;#34;}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And now you are done! See my other posts about what and how to do after finishing setting up the ca:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Setting up Caddy reverse proxy with local CA (coming soon)&lt;/li&gt;
@@ -246,35 +246,35 @@ But my personal favorite is the ability to just write you blog-posts in pure mar
 &lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The markdown code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;# A test
-This is a small test for the differences of markdown / html.
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; first part of a list
-&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; second part of a list
-&lt;span style=&#34;color:#75715e&#34;&gt;## smaller Heading
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-[&lt;span style=&#34;color:#f92672&#34;&gt;A link&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/&lt;/span&gt;)
-
-![&lt;span style=&#34;color:#f92672&#34;&gt;A picture&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/img/free-images/panorama.svg&lt;/span&gt;)
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;**Bold**&lt;/span&gt;
-
-&lt;span style=&#34;font-style:italic&#34;&gt;*Emphasized*&lt;/span&gt;
-
-&lt;span style=&#34;color:#f92672&#34;&gt;~~Strikethrough~~&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same in html:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a-test&amp;#34;&lt;/span&gt;&amp;gt;A test&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;This is a small test for the differences of markdown / html.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;first part of a list&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;second part of a list&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;smaller-heading&amp;#34;&lt;/span&gt;&amp;gt;smaller Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&amp;gt;A link&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/img/free-images/panorama.svg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A picture&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;Bold&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;Emphasized&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;Strikethrough&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can clearly see, that markdown&amp;rsquo;s syntax is a lot easier to write as well as a lot cleaner than the same in actual html. At the other hand, I really don&amp;rsquo;t like web development and would like to avoid that at least a bit so I&amp;rsquo;m even more happy about this feature.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# A test
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;This is a small test for the differences of markdown / html.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; first part of a list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; second part of a list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## smaller Heading
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;A link&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;A picture&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;/img/free-images/panorama.svg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;**Bold**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;*Emphasized*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~~Strikethrough~~&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same in html:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a-test&amp;#34;&lt;/span&gt;&amp;gt;A test&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;This is a small test for the differences of markdown / html.&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;first part of a list&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;second part of a list&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;smaller-heading&amp;#34;&lt;/span&gt;&amp;gt;smaller Heading&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h2&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;li&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;ul&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&amp;gt;A link&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/img/free-images/panorama.svg&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A picture&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;Bold&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;strong&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;Emphasized&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;em&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;Strikethrough&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;del&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;p&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can clearly see, that markdown&amp;rsquo;s syntax is a lot easier to write as well as a lot cleaner than the same in actual html. At the other hand, I really don&amp;rsquo;t like web development and would like to avoid that at least a bit so I&amp;rsquo;m even more happy about this feature.&lt;/p&gt;
 &lt;h1 id=&#34;but-why-hugo&#34;&gt;But why Hugo?&lt;/h1&gt;
 &lt;p&gt;I have already noted in my last post that I have used Jekyll on the old version of this blog but I experienced some problems and difficulties that would have cost me a lot of time. The first version of this blog was German only but I wanted to make this blog multilingual. As Jekyll don&amp;rsquo;t supports using two languages well and at the same time, I didn&amp;rsquo;t find a good theme with two languages already build in, I tried Hugo. Sure, Hugo does not offer a plugin system, but at least it has features for adding a second language built in. It also handles themes a lot better than Jekyll making it extremely easy to add themes and even update them without the need of migrating the whole site. One last thing, that made me switch, was that I found the theme I&amp;rsquo;m currently using immediately. I like It a lot more than all other themes, even on Jekyll I found.&lt;/p&gt;
 &lt;h1 id=&#34;problems-with-hugo&#34;&gt;Problems with Hugo&lt;/h1&gt;
